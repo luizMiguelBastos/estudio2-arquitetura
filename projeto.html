@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projeto · Estúdio2 Arquitetura</title>
+<meta name="description" content="Projeto do Estúdio2 Arquitetura, Natal/RN.">
+<meta name="theme-color" content="#0A0C0A">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="shared.css">
+<script src="projetos.js"></script>
+<style>
+.pj{padding:150px 0 60px}
+.back{display:inline-flex;align-items:center;gap:10px;font:500 10px/1 var(--ff-t);letter-spacing:.26em;text-transform:uppercase;color:var(--mute);margin-bottom:40px;transition:color .3s}.back:hover{color:#fff}
+.pj-head{display:grid;gap:22px;max-width:1000px}
+.pj h1{font-size:clamp(50px,7.5vw,112px);line-height:.95}
+.pj .lede{font-size:clamp(16px,1.3vw,19px);max-width:62ch;color:var(--sand)}
+.ficha{display:flex;gap:clamp(24px,4vw,56px);flex-wrap:wrap;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:36px 0 clamp(30px,4vw,54px)}
+.ficha b{display:block;font:400 24px/1 var(--ff-d);color:#fff}.ficha span{font:500 9.5px/1.6 var(--ff-t);letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:900px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal a{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:var(--surface)}
+.gal a:first-child{grid-column:1/-1;aspect-ratio:16/9}
+@media (min-width:900px){.gal a:first-child{aspect-ratio:21/9}}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}.gal a:hover img{transform:scale(1.04)}
+.gal a::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px var(--line);pointer-events:none}
+.txt{display:grid;gap:30px;margin:clamp(50px,7vw,100px) 0}
+@media (min-width:900px){.txt{grid-template-columns:.36fr .64fr;gap:80px;align-items:start}.txt h2{position:sticky;top:110px}}
+.txt h2{font-size:clamp(34px,3.6vw,54px)}
+.txt .body{display:grid;gap:20px;color:var(--mute);font-size:16px;max-width:66ch}
+.txt .body p:first-child{color:var(--sand);font-size:17px}
+.prog{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.prog small{display:block;font:500 10px/1 var(--ff-t);letter-spacing:.26em;text-transform:uppercase;color:var(--sage);margin-bottom:12px}
+.prog p{color:var(--sand);font-size:15px}
+.outros{padding:clamp(70px,9vw,120px) 0;background:var(--bg-2)}
+.outros .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.reel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:10px;cursor:grab;-webkit-overflow-scrolling:touch}.reel::-webkit-scrollbar{display:none}.reel.drag{cursor:grabbing;scroll-snap-type:none}
+.reel .card{flex:none;width:min(76%,340px);scroll-snap-align:start}
+.hint{display:inline-flex;align-items:center;gap:10px;font:500 10px/1 var(--ff-t);letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.hint svg{width:22px;height:22px;animation:hint 2.2s var(--ease) infinite}@keyframes hint{50%{transform:translateX(8px)}}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(10,12,10,.96);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .4s}
+.lb.open{opacity:1;pointer-events:auto}
+.lb img{max-width:min(94vw,1500px);max-height:88vh;object-fit:contain;box-shadow:0 40px 100px -40px #000}
+.lb .x{position:absolute;right:22px;top:18px;font:300 40px var(--ff-d);color:var(--sand)}
+.lb .n{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border:1px solid var(--line-2);font:300 26px var(--ff-d);color:var(--sand);display:grid;place-items:center}
+.lb .n.l{left:18px}.lb .n.r{right:18px}
+.lb .c{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font:500 10px/1 var(--ff-t);letter-spacing:.26em;color:var(--mute)}
+</style>
+</head>
+<body>
+<header class="nav solid" id="nav"><div class="wrap">
+  <a class="brand" href="index.html"><i>e2</i>estudio2arquitetura</a>
+  <nav class="menu"><a href="index.html#sobre">Sobre</a><a href="index.html#estudio">Estúdio</a><a href="index.html#destaques">Destaques</a><a href="index.html#projetos" class="on">Projetos</a><a href="index.html#contato">Contato</a></nav>
+  <a class="btn" href="index.html#contato">Entre em contato</a>
+</div></header>
+
+<main>
+<section class="pj"><div class="wrap">
+  <a class="back" href="index.html#projetos">← Voltar aos projetos</a>
+  <div class="pj-head rv"><p class="k" id="k"></p><h1 id="h"></h1><p class="lede" id="lede"></p></div>
+  <div class="ficha" id="ficha"></div>
+  <div class="gal" id="gal" data-stagger></div>
+  <div class="txt"><h2 class="rv">Sobre o <em>projeto</em></h2><div><div class="body rv" id="body"></div><div class="prog rv" id="prog"></div></div></div>
+</div></section>
+<section class="outros"><div class="wrap">
+  <div class="head rv"><div><p class="k">Portfólio</p><h2 style="margin-top:10px">Outros <em>projetos</em></h2></div><span class="hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M3 12h18M15 6l6 6-6 6"/></svg>Arraste</span></div>
+  <div class="reel" id="reel"></div>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap"><span>© <span id="yr">2026</span> Estúdio2 Arquitetura · Fabrício Lira</span><span>Av. das Tulipas, 1914 · Natal, RN</span></div></footer>
+
+<div class="lb" id="lb"><button class="x" id="lbx" aria-label="Fechar">×</button><button class="n l" id="lbl" aria-label="Anterior">‹</button><img id="lbi" alt=""><button class="n r" id="lbr" aria-label="Próxima">›</button><span class="c" id="lbc"></span></div>
+
+<script>
+(function(){
+  document.documentElement.classList.add("has-js");
+  var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  $("#yr").textContent=new Date().getFullYear();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1});
+  function watch(){$$(".rv,[data-stagger]").forEach(function(el){io.observe(el)})}
+  var id=new URLSearchParams(location.search).get("id")||"ambar",fotos=[],cur=0;
+  function card(p){var inner=p.placeholder?'<div class="ph"><b>'+p.nome.charAt(0)+'</b>Em breve</div>':'<img src="'+p.capa+'-t.webp" alt="'+p.nome+'" loading="lazy" draggable="false">';
+    return '<a class="card" href="'+(p.placeholder?'index.html#projetos':'projeto.html?id='+p.id)+'" draggable="false">'+inner+'<div class="nm">'+p.nome+'<small>'+p.cat_label+' · '+p.cidade+'</small></div></a>'}
+  Promise.resolve(window.PROJETOS).then(function(d){
+    var P=d.projetos,p=P.filter(function(x){return x.id===id})[0]||P[0];
+    document.title=p.nome+" · Estúdio2 Arquitetura";
+    $("#k").textContent=p.cat_label+" · "+p.cidade+(p.ano?" · "+p.ano:"");
+    var parts=p.nome.split(" ");$("#h").innerHTML=parts.length>1?parts.slice(0,-1).join(" ")+" <em>"+parts.slice(-1)+"</em>":p.nome;
+    $("#lede").textContent=p.resumo||"";
+    var f=[];if(p.area)f.push(["Área",p.area]);if(p.ano)f.push(["Ano",p.ano]);f.push(["Local",p.cidade]);if(p.status)f.push(["Status",p.status]);if(p.tipologia)f.push(["Tipologia",p.tipologia.split(" · ")[0]]);
+    $("#ficha").innerHTML=f.map(function(x){return "<div><b>"+x[1]+"</b><span>"+x[0]+"</span></div>"}).join("");
+    fotos=(p.fotos||[]).map(function(x){return x+".webp"});
+    $("#gal").innerHTML=(p.fotos||[]).map(function(x,i){return '<a href="'+x+'.webp" data-i="'+i+'"><img src="'+x+(i===0?'':'-t')+'.webp" alt="'+p.nome+'" loading="'+(i<3?'eager':'lazy')+'"></a>'}).join("");
+    $("#body").innerHTML=(p.texto||[]).map(function(t){return "<p>"+t+"</p>"}).join("");
+    $("#prog").innerHTML=p.programa?"<small>Programa</small><p>"+p.programa+"</p>":"";
+    $("#reel").innerHTML=P.filter(function(x){return x.id!==p.id}).map(card).join("");
+    watch();
+    $$("#gal a").forEach(function(a){a.onclick=function(e){e.preventDefault();open(+a.getAttribute("data-i"))}});
+  });
+  /* lightbox */
+  var lb=$("#lb"),lbi=$("#lbi"),lbc=$("#lbc");
+  function show(i){cur=(i+fotos.length)%fotos.length;lbi.src=fotos[cur];lbc.textContent=(cur+1)+" / "+fotos.length}
+  function open(i){show(i);lb.classList.add("open");document.body.style.overflow="hidden"}
+  function close(){lb.classList.remove("open");document.body.style.overflow=""}
+  $("#lbx").onclick=close;$("#lbl").onclick=function(){show(cur-1)};$("#lbr").onclick=function(){show(cur+1)};
+  lb.addEventListener("click",function(e){if(e.target===lb)close()});
+  addEventListener("keydown",function(e){if(!lb.classList.contains("open"))return;if(e.key==="Escape")close();if(e.key==="ArrowRight")show(cur+1);if(e.key==="ArrowLeft")show(cur-1)});
+  /* reel drag */
+  var reel=$("#reel"),down=false,sx=0,sl=0,moved=false;
+  reel.addEventListener("pointerdown",function(e){if(e.pointerType!=="mouse")return;down=true;moved=false;sx=e.clientX;sl=reel.scrollLeft;reel.classList.add("drag")});
+  addEventListener("pointermove",function(e){if(!down)return;var dx=e.clientX-sx;if(Math.abs(dx)>4)moved=true;reel.scrollLeft=sl-dx});
+  addEventListener("pointerup",function(){if(!down)return;down=false;reel.classList.remove("drag")});
+  reel.addEventListener("click",function(e){if(moved){e.preventDefault();e.stopPropagation()}},true);
+  scrollTo(0,0);
+})();
+</script>
+</body>
+</html>

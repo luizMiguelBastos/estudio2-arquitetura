@@ -1,0 +1,47 @@
+{
+  "projetos": [
+    {
+      "id": "ambar", "nome": "Casa Âmbar", "categoria": "casas", "cat_label": "Casas", "cidade": "Natal, RN", "ano": "2024",
+      "destaque": true, "status": "Construída", "area": "240 m²", "tipologia": "Residencial duplex · Casa assinada",
+      "programa": "3 suítes (1 térrea + 2 master) · Salas de estar e jantar integradas · Cozinha e gourmet privativo · Terraço gourmet com churrasqueira · Escritório · Garagem para 2 carros",
+      "resumo": "Volumes ortogonais e curvas suaves em uma casa pensada para fortalecer os elos de uma família no cotidiano.",
+      "texto": [
+        "A Casa Âmbar nasce do desejo de traduzir o morar contemporâneo em um gesto de acolhimento e afeto. Situada em Natal/RN, a residência de 240 m² estabelece uma relação harmônica com o entorno ao equilibrar a solidez dos volumes ortogonais com a suavidade de elementos curvos e formas orgânicas que desenham sua fachada. Mais do que uma estrutura física, o projeto foi concebido para uma família que não buscava apenas construir uma casa, mas erguer um lar capaz de nutrir e fortalecer os elos familiares no cotidiano.",
+        "A arquitetura busca na escala humana o reencontro do desenho com a pessoalidade. A paleta de materiais combina o calor da madeira, a textura acolhedora da pedra natural e a leveza das superfícies claras, criando uma atmosfera fluida e tátil. A marquise curva horizontal e os volumes cilíndricos na fachada abrem caminho para uma transição suave entre o espaço urbano e a intimidade da vida em família.",
+        "No pavimento térreo, a integração espacial é o fio condutor da convivência. A área social une de forma fluida as salas de estar e jantar à cozinha e ao espaço gourmet privativo, criando um ambiente amplo e contínuo para recepções e encontros do dia a dia. Para momentos mais intimistas, o terraço gourmet equipado com churrasqueira funciona como o cenário ideal para celebrações reservadas em família. O piso térreo abriga ainda uma suíte acessível, um escritório reservado para a rotina de trabalho e a garagem coberta para dois veículos.",
+        "O pavimento superior acolhe o setor íntimo da casa, composto por duas amplas suítes master projetadas para garantir a máxima privacidade, descanso e conforto térmico, aproveitando a ventilação natural abundante do litoral potiguar.",
+        "A Casa Âmbar reafirma a premissa de que a boa arquitetura é aquela que serve de suporte à vida, onde cada curva, textura e feixe de luz natural convergem para criar um refúgio acolhedor e atemporal."
+      ],
+      "capa": "img/ambar/03", "build": {"sketch": "img/ambar/sketch.png", "clay": "img/ambar/clay.webp", "foto": "img/ambar/03.webp"},
+      "fotos": ["img/ambar/03","img/ambar/01","img/ambar/02","img/ambar/04","img/ambar/05","img/ambar/06","img/ambar/07","img/ambar/08","img/ambar/09","img/ambar/10","img/ambar/11"]
+    },
+    {
+      "id": "prisma", "nome": "Casa Prisma", "categoria": "casas", "cat_label": "Casas", "cidade": "Natal, RN", "ano": "2025",
+      "destaque": false, "status": "Projeto", "area": "307 m²", "tipologia": "Residencial duplex · Casa assinada",
+      "programa": "3 suítes (2 master) + 1 quarto de hóspedes · Salas integradas · Terraço gourmet · Escritório · Lazer com piscina, deck molhado e hidromassagem · Garagem para 2 carros",
+      "resumo": "Rigor geométrico, volumes sobrepostos e uma iluminação cênica que contorna as lajes.",
+      "texto": [
+        "A Casa Prisma nasce do rigor geométrico e da busca pelo equilíbrio entre volumetria marcante e leveza espacial. Localizada em um lote que valoriza a iluminação natural e a integração paisagística, a residência se traduz em uma composição contemporânea composta por volumes sobrepostos bem definidos, onde grandes vãos e planos puristas destacam o padrão elevado do projeto.",
+        "No pavimento térreo, a arquitetura privilegia o convívio e a fluidez visual. As salas de estar, jantar e TV integram-se de forma contínua à cozinha e ao terraço gourmet, dissolvendo os limites entre os espaços internos e a área social externa. Completam o pavimento térreo um escritório versátil voltado para quem necessita de um refúgio de trabalho silencioso, garagem coberta para dois veículos e a área de serviço e lavanderia estrategicamente posicionada.",
+        "O acesso ao pavimento superior revela a área íntima, planejada para garantir o máximo de conforto e privacidade. O programa acomoda três amplas suítes, sendo duas suítes master com closets e varandas privativas, além de um aconchegante quarto de hóspedes.",
+        "Na área externa de lazer, o pátio privativo é o grande protagonista da vida social. Um amplo deck abraça a piscina com área de descanso em deck molhado e uma banheira de hidromassagem integrada, criando uma atmosfera de resort privativo. O paisagismo autoral completa a experiência sensorial, priorizando o uso de espécies nativas de floração contínua que trazem cor, dinamismo e frescor ao microclima da casa ao longo de todas as estações do ano.",
+        "A materialidade, que combina o calor dos painéis amadeirados, a robustez da pedra mineral e a sofisticação da estrutura metálica, aliada a uma iluminação cênica contínua que contorna suas lajes, reafirma a Casa Prisma como um ícone da arquitetura contemporânea e de alto padrão de excelência."
+      ],
+      "capa": "img/prisma/02",
+      "fotos": ["img/prisma/02","img/prisma/01","img/prisma/04","img/prisma/03","img/prisma/06","img/prisma/05","img/prisma/07","img/prisma/08","img/prisma/09","img/prisma/10"]
+    },
+    {
+      "id": "solaris", "nome": "Casa Solaris", "categoria": "casas", "cat_label": "Casas", "cidade": "Natal, RN", "ano": "2024",
+      "destaque": false, "status": "Construída", "area": "", "tipologia": "Residencial · Casa assinada", "programa": "",
+      "resumo": "Lajes em balanço, pedra e madeira sob a luz do fim de tarde.",
+      "texto": ["Texto do projeto a ser enviado pelo estúdio."],
+      "capa": "img/solaris/01", "fotos": ["img/solaris/01"]
+    },
+    {"id": "aurora", "nome": "Casa Aurora", "categoria": "casas", "cat_label": "Casas", "cidade": "Natal, RN", "ano": "2024", "placeholder": true},
+    {"id": "solis", "nome": "Casa Solis", "categoria": "casas", "cat_label": "Casas", "cidade": "Parnamirim, RN", "ano": "2023", "placeholder": true},
+    {"id": "lima", "nome": "Edifício Lima", "categoria": "edificios", "cat_label": "Edifícios", "cidade": "Natal, RN", "ano": "2022", "placeholder": true},
+    {"id": "enlace", "nome": "Casa Enlace", "categoria": "interiores", "cat_label": "Interiores", "cidade": "Natal, RN", "ano": "2024", "placeholder": true},
+    {"id": "imperium", "nome": "Casa Imperium", "categoria": "casas", "cat_label": "Casas", "cidade": "Natal, RN", "ano": "2025", "placeholder": true},
+    {"id": "parnamirim", "nome": "Parnamirim Cidade Sustentável", "categoria": "urbano", "cat_label": "Urbano", "cidade": "Parnamirim, RN", "ano": "2025", "placeholder": true}
+  ]
+}
