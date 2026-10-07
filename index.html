@@ -92,6 +92,8 @@
 .who .fig::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,#1A2520,#0F1511)}
 .who .fig span{position:absolute;left:22px;bottom:20px;font:500 10px/1.6 var(--ff-t);letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
 .who .fig i{position:absolute;inset:0;display:grid;place-items:center;font:400 180px var(--ff-d);color:rgba(218,215,205,.06);font-style:normal}
+.who .fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.who .fig span{z-index:1}.who .fig span::before{content:"";position:absolute;left:-22px;bottom:-20px;width:300px;height:150px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 0% 100%,rgba(7,9,10,.78) 0%,rgba(7,9,10,.45) 42%,rgba(7,9,10,0) 72%)}
 .who .fig::after{content:"";position:absolute;inset:14px;border:1px solid var(--line);pointer-events:none}
 .studio-head{display:grid;gap:26px;align-items:center}
 @media (min-width:900px){.studio-head{grid-template-columns:1fr 1fr;gap:56px 72px;align-items:start}.studio-head>div:nth-child(2){max-width:520px}.atua{grid-column:1}.selo{grid-column:2;max-width:520px}}
@@ -240,7 +242,7 @@
           <div class="txt"><p class="k">Sobre</p><h2>Fabrício <em>Lira</em></h2>
             <p>Arquiteto e urbanista, mestre e doutor em Arquitetura e Urbanismo. Autor de mais de 400 projetos de arquitetura e desenho urbano. Há mais de duas décadas à frente do Estúdio2, coordena uma equipe de arquitetos e engenheiros especialistas em áreas diversas da arquitetura, engenharia e gestão de obras.</p>
             <div class="proof"><div><b>Doutor</b><span>em Arquitetura e Urbanismo</span></div><div><b>Quase 30</b><span>anos de arquitetura</span></div><div><b>400+</b><span>projetos de arquitetura e desenho urbano</span></div><div><b>+20</b><span>anos à frente do Estúdio2</span></div></div></div>
-          <figure class="fig"><i>e2</i><span>Fabrício Lira<br>Arquiteto e urbanista</span></figure>
+          <figure class="fig"><img src="img/fabricio.webp" alt="Fabrício Lira" loading="lazy"><span>Fabrício Lira<br>Arquiteto e urbanista</span></figure>
         </div>
       </article>
       <article class="panel p-est"><div class="dim"></div><div class="bp"></div>
@@ -288,31 +290,59 @@
     <div class="feat-head rv right"><p class="k">Destaques</p><h2>Projetos em <em>destaque</em></h2><p class="lede">Do primeiro traço à casa construída. Arraste para o lado para ver o próximo projeto.</p></div>
     <div class="band"><div class="car rv" id="car">
       <div class="track" id="track">
-      <div class="slide on">
-        <div class="build" id="build">
-          <div class="cam" id="cam"><img class="ly on" src="img/ambar/03.webp" alt="Casa Âmbar" draggable="false"></div>
+      <div class="slide on" data-id="max">
+        <div class="build">
+          <div class="cam"></div>
           <div class="vig"></div>
-          <div class="cap"><i></i><span id="capTxt">Fachada</span></div>
-          <div class="thumbs" id="thumbs"></div>
+          <div class="cap"><i></i><span>01</span></div>
+          <div class="thumbs"></div>
         </div>
         <b class="num">01</b>
         <div class="sbody">
-          <h3>Casa <em>Âmbar</em></h3>
+          <h3>Casa <em>Max</em></h3>
           <div class="pane">
-          <p class="meta">Residencial · Natal, RN · 2024</p>
-          <p>A Casa Âmbar nasce do desejo de traduzir o morar contemporâneo em um gesto de acolhimento e afeto. Volumes ortogonais e curvas suaves, madeira, pedra natural e superfícies claras em uma casa pensada para fortalecer os elos de uma família no cotidiano.</p>
-          <div class="spec"><div><b>240 m²</b><span>área</span></div><div><b>3</b><span>suítes</span></div><div><b>Duplex</b><span>tipologia</span></div></div>
-          <a class="btn" href="projeto.html?id=ambar">Ver projeto</a>
+          <p class="meta">Residencial · Parnamirim, RN · 2025</p>
+          <p>Consolidada como uma das grandes referências de projeto do Estúdio 2 Arquitetura em 2025, a Casa Max traduz a imponência da arquitetura contemporânea em perfeita harmonia com o cenário natural do seu entorno.</p>
+          <div class="spec"><div><b>312 m²</b><span>área</span></div><div><b>4</b><span>suítes</span></div><div><b>Projeto</b><span>status</span></div></div>
+          <a class="btn" href="projeto.html?id=max">Ver projeto</a>
           </div>
         </div>
       </div>
-      <div class="slide soon">
-        <div class="build"><b>02</b><span>Destaque em definição</span></div><b class="num">02</b>
-        <div class="sbody"><h3>Em <em>definição</em></h3><div class="pane"><p class="meta">Destaque 02</p><p>O segundo projeto em destaque entra assim que o estúdio definir qual casa ocupa este espaço.</p></div></div>
+      <div class="slide" data-id="vw">
+        <div class="build">
+          <div class="cam"></div>
+          <div class="vig"></div>
+          <div class="cap"><i></i><span>01</span></div>
+          <div class="thumbs"></div>
+        </div>
+        <b class="num">02</b>
+        <div class="sbody">
+          <h3>Casa <em>VW</em></h3>
+          <div class="pane">
+          <p class="meta">Residencial · Parnamirim, RN · 2023</p>
+          <p>A Casa VW materializa a síntese dos princípios fundamentais do estudio2arquitetura: o respeito à topografia natural do terreno, o rigor com as condicionantes bioclimáticas, a funcionalidade desenhada para a rotina familiar e a busca por uma linguagem estética inovadora.</p>
+          <div class="spec"><div><b>270 m²</b><span>área</span></div><div><b>3</b><span>suítes</span></div><div><b>Obra executada</b><span>status</span></div></div>
+          <a class="btn" href="projeto.html?id=vw">Ver projeto</a>
+          </div>
+        </div>
       </div>
-      <div class="slide soon">
-        <div class="build"><b>03</b><span>Destaque em definição</span></div><b class="num">03</b>
-        <div class="sbody"><h3>Em <em>definição</em></h3><div class="pane"><p class="meta">Destaque 03</p><p>O terceiro projeto em destaque entra assim que o estúdio definir qual casa ocupa este espaço.</p></div></div>
+      <div class="slide" data-id="agnus">
+        <div class="build">
+          <div class="cam"></div>
+          <div class="vig"></div>
+          <div class="cap"><i></i><span>01</span></div>
+          <div class="thumbs"></div>
+        </div>
+        <b class="num">03</b>
+        <div class="sbody">
+          <h3>Casa <em>Agnus</em></h3>
+          <div class="pane">
+          <p class="meta">Residencial · Parnamirim, RN · 2023</p>
+          <p>Concebida sob o partido de compreender a morada como um verdadeiro santuário, a Casa Agnus transcende a mera escolha formal de materiais para criar um espaço de acolhimento, vivência íntima e profunda conexão com a espiritualidade.</p>
+          <div class="spec"><div><b>312 m²</b><span>área</span></div><div><b>4</b><span>suítes</span></div><div><b>Obra executada</b><span>status</span></div></div>
+          <a class="btn" href="projeto.html?id=agnus">Ver projeto</a>
+          </div>
+        </div>
       </div>
       </div>
       <div class="ctrl"><span class="dots" id="dots"><i class="on"></i><i></i><i></i></span><span class="drag">Arraste para o lado</span><span class="arr"><button type="button" id="prev" aria-label="Anterior">‹</button><button type="button" id="next" aria-label="Próximo">›</button></span></div>
@@ -390,8 +420,8 @@
   function updQ(){quotes.forEach(function(o){var r=o.el.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.8-r.top)/(r.height+innerHeight*.35)));o.ws.forEach(function(w,i){w.classList.toggle("on",i/o.ws.length<p)})})}
   function updF1(){["frase1","frase2"].forEach(function(id){var sec=document.getElementById(id),im=$(".bg img",sec),r=sec.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var p=(innerHeight-r.top)/(innerHeight+r.height);im.style.transform="scale(1.12) translateY("+((p-.5)*-9)+"%)"})}
   /* parallax da foto do destaque */
-  var carEl=$("#car"),camEl=$("#cam");
-  function updCar(){if(RM||!camEl)return;var r=carEl.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var p=(innerHeight-r.top)/(innerHeight+r.height);camEl.style.translate="0 "+((p-.5)*-7)+"%"}
+  var carEl=$("#car"),camEls=$$("#car .cam");
+  function updCar(){if(RM||!camEls.length)return;var r=carEl.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var p=(innerHeight-r.top)/(innerHeight+r.height);camEls.forEach(function(c){c.style.translate="0 "+((p-.5)*-7)+"%"})}
   /* escurecimento da seção que sai de cena */
   var dimSecs=$$("main > section").map(function(sec){var d=document.createElement("div");d.className="sdim";sec.appendChild(d);return {sec:sec,d:d}});
   function updDim(){if(RM)return;dimSecs.forEach(function(o){var r=o.sec.getBoundingClientRect();if(r.bottom<=0||r.top>=innerHeight){o.d.style.opacity="0";return}var L=Math.min(1,Math.max(0,1-r.bottom/innerHeight));o.d.style.opacity=(L*.6).toFixed(3)})}
@@ -421,17 +451,24 @@
       setInterval(function(){if(document.hidden||scrollY>innerHeight)return;var nx=cur+1;if(nx>=imgs.length)nx=-1;dark.classList.add("on");
         setTimeout(function(){imgs.forEach(function(im,i){im.classList.toggle("on",i===nx)});cur=nx},1000);setTimeout(function(){dark.classList.remove("on")},2400)},7000)}
     if(document.readyState==="complete")start();else addEventListener("load",start)})();
-  /* destaques: carrossel + troca de fotos */
-  var k=0,slides=$$("#car .slide"),dots=$$("#dots i"),build=$("#build"),cam=$("#cam"),thumbs=$("#thumbs"),capTxt=$("#capTxt");
-  var AMBAR=[["img/ambar/03","Fachada"],["img/ambar/01","Rua"],["img/ambar/04","Lateral"],["img/ambar/06","Entrada"],["img/ambar/08","Marquise"],["img/ambar/11","Gourmet"]];
-  thumbs.innerHTML=AMBAR.map(function(f,i){return '<button type="button" data-i="'+i+'" class="'+(i===0?"on":"")+'"><img src="'+f[0]+'-t.webp" alt="" draggable="false"></button>'}).join("");
-  $$("button",thumbs).forEach(function(b){b.onclick=function(){var i=+b.getAttribute("data-i");$$("button",thumbs).forEach(function(x){x.classList.remove("on")});b.classList.add("on");
-    var im=document.createElement("img");im.className="ly";im.src=AMBAR[i][0]+".webp";im.alt="Casa Âmbar";cam.appendChild(im);
-    function sw(){requestAnimationFrame(function(){im.classList.add("on");$$(".ly",cam).forEach(function(o){if(o!==im)o.classList.remove("on")});setTimeout(function(){$$(".ly",cam).forEach(function(o){if(o!==im)o.remove()})},1300)});capTxt.textContent=AMBAR[i][1]}
-    if(im.complete)sw();else im.onload=sw;startAuto()}});
-  var autoT;function startAuto(){clearInterval(autoT);autoT=setInterval(function(){if(document.hidden||k!==0)return;var r=$("#car").getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var cur=+$("button.on",thumbs).getAttribute("data-i"),bs=$$("button",thumbs);bs[(cur+1)%bs.length].click()},5000)}startAuto();
+  /* destaques: carrossel + troca de fotos (cada slide usa as 6 primeiras fotos do projeto) */
+  var k=0,slides=$$("#car .slide"),dots=$$("#dots i"),PJ={};
+  ((window.PROJETOS||{}).projetos||[]).forEach(function(p){PJ[p.id]=p});
+  function pad(n){return (n<10?"0":"")+n}
+  var gals=slides.map(function(sl){var p=PJ[sl.getAttribute("data-id")],cam=$(".cam",sl),thumbs=$(".thumbs",sl),capTxt=$(".cap span",sl);if(!p||!thumbs)return null;
+    var F=(p.fotos||[]).slice(0,6);if(!F.length){$(".cap",sl).style.display="none";return null}
+    var first=document.createElement("img");first.className="ly on";first.src=F[0]+".webp";first.alt=p.nome;first.draggable=false;first.loading="lazy";cam.appendChild(first);
+    capTxt.textContent=pad(1)+" / "+pad(F.length);
+    thumbs.innerHTML=F.map(function(f,i){return '<button type="button" data-i="'+i+'" class="'+(i===0?"on":"")+'"><img src="'+f+'-t.webp" alt="" draggable="false" loading="lazy"></button>'}).join("");
+    function sel(i){$$("button",thumbs).forEach(function(x,j){x.classList.toggle("on",j===i)});
+      var im=document.createElement("img");im.className="ly";im.src=F[i]+".webp";im.alt=p.nome;im.draggable=false;cam.appendChild(im);
+      function sw(){requestAnimationFrame(function(){im.classList.add("on");$$(".ly",cam).forEach(function(o){if(o!==im)o.classList.remove("on")});setTimeout(function(){$$(".ly",cam).forEach(function(o){if(o!==im)o.remove()})},1300)});capTxt.textContent=pad(i+1)+" / "+pad(F.length)}
+      if(im.complete)sw();else im.onload=sw}
+    $$("button",thumbs).forEach(function(b){b.onclick=function(){sel(+b.getAttribute("data-i"));startAuto()}});
+    return {next:function(){var cur=+$("button.on",thumbs).getAttribute("data-i");sel((cur+1)%F.length)}}});
+  var autoT;function startAuto(){clearInterval(autoT);autoT=setInterval(function(){if(document.hidden||!gals[k])return;var r=$("#car").getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;gals[k].next()},5000)}startAuto();
   var trk=$("#track");
-  function go(i){k=Math.max(0,Math.min(slides.length-1,i));trk.classList.remove("drag");trk.style.transform="translate3d("+(-k*100)+"%,0,0)";slides.forEach(function(s,j){s.classList.toggle("on",j===k)});dots.forEach(function(d,j){d.classList.toggle("on",j===k)})}
+  function go(i){k=Math.max(0,Math.min(slides.length-1,i));startAuto();trk.classList.remove("drag");trk.style.transform="translate3d("+(-k*100)+"%,0,0)";slides.forEach(function(s,j){s.classList.toggle("on",j===k)});dots.forEach(function(d,j){d.classList.toggle("on",j===k)})}
   $("#prev").onclick=function(){go(k-1)};$("#next").onclick=function(){go(k+1)};
   (function(){var down=false,sx=0,dx=0,w=0;trk.addEventListener("pointerdown",function(e){if(e.target.closest("button,a"))return;down=true;dx=0;sx=e.clientX;w=trk.clientWidth;trk.classList.add("drag");trk.setPointerCapture(e.pointerId)});
     trk.addEventListener("pointermove",function(e){if(!down)return;dx=e.clientX-sx;var lim=(k===0&&dx>0)||(k===slides.length-1&&dx<0)?.35:1;trk.style.transform="translate3d(calc("+(-k*100)+"% + "+(dx*lim)+"px),0,0)"});
@@ -440,7 +477,7 @@
 
   /* projetos */
   var P=[],cat="todos",qs="";
-  function card(p){var inner=p.placeholder?'<div class="ph"><b>'+(p.nome.charAt(0))+'</b>Em breve</div>':'<img src="'+p.capa+'-t.webp" alt="'+p.nome+'" loading="lazy">';
+  function card(p){var inner=p.placeholder?'<div class="ph"><b>'+(p.nome.charAt(0))+'</b>Em breve</div>':p.capa?'<img src="'+p.capa+'-t.webp" alt="'+p.nome+'" loading="lazy">':'<div class="ph"><b>'+(p.nome.split(" ").pop().charAt(0))+'</b>Fotos em breve</div>';
     return '<a class="card" href="'+(p.placeholder?'#projetos':'projeto.html?id='+p.id)+'">'+inner+'<div class="nm">'+p.nome+'<small>'+p.cat_label+' · '+p.cidade+'</small></div></a>'}
   function grid(){var g=$("#grid"),list=P.filter(function(p){return (cat==="todos"||p.categoria===cat)&&p.nome.toLowerCase().indexOf(qs)>-1});g.innerHTML=list.map(card).join("");g.classList.add("in");$("#empty").style.display=list.length?"none":"block"}
   Promise.resolve(window.PROJETOS).then(function(d){P=d.projetos;grid()});

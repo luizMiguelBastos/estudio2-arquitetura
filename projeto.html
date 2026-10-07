@@ -81,7 +81,7 @@
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1});
   function watch(){$$(".rv,[data-stagger]").forEach(function(el){io.observe(el)})}
   var id=new URLSearchParams(location.search).get("id")||"ambar",fotos=[],cur=0;
-  function card(p){var inner=p.placeholder?'<div class="ph"><b>'+p.nome.charAt(0)+'</b>Em breve</div>':'<img src="'+p.capa+'-t.webp" alt="'+p.nome+'" loading="lazy" draggable="false">';
+  function card(p){var inner=p.placeholder?'<div class="ph"><b>'+p.nome.charAt(0)+'</b>Em breve</div>':p.capa?'<img src="'+p.capa+'-t.webp" alt="'+p.nome+'" loading="lazy" draggable="false">':'<div class="ph"><b>'+p.nome.split(" ").pop().charAt(0)+'</b>Fotos em breve</div>';
     return '<a class="card" href="'+(p.placeholder?'index.html#projetos':'projeto.html?id='+p.id)+'" draggable="false">'+inner+'<div class="nm">'+p.nome+'<small>'+p.cat_label+' · '+p.cidade+'</small></div></a>'}
   Promise.resolve(window.PROJETOS).then(function(d){
     var P=d.projetos,p=P.filter(function(x){return x.id===id})[0]||P[0];
