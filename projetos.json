@@ -20,8 +20,21 @@
         "O coroamento da edificação é dedicado ao convívio e à contemplação: no pavimento solarium, os moradores desfrutam de um refúgio privativo nas alturas. A área de lazer rooftop conta com um espaço gourmet coberto sob estrutura amadeirada e telha cerâmica, equipado com churrasqueira, bancada completa e acabamentos cerâmicos marcantes, além de um pergolado de madeira que acolhe uma relaxante banheira de hidromassagem e lounge externo com vista panorâmica para a paisagem urbana.",
         "O Edifício Lima reafirma a vocação da arquitetura autoral para redefinir o morar vertical, unindo privacidade de casa, estética de vanguarda e uma experiência única de moradia."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/lima/01",
+      "fotos": [
+        "img/lima/01",
+        "img/lima/02",
+        "img/lima/03",
+        "img/lima/04",
+        "img/lima/05",
+        "img/lima/06",
+        "img/lima/07",
+        "img/lima/08",
+        "img/lima/09",
+        "img/lima/10",
+        "img/lima/11",
+        "img/lima/12"
+      ]
     },
     {
       "id": "aurora",
@@ -43,8 +56,22 @@
         "O setor íntimo acomoda quatro suítes privativas, desenhadas para garantir o máximo de bem-estar. Destacam-se as duas suítes master, equipadas com espaçosos closets e banheiros privativos voltados para a contemplação da vegetação. Um quarto de hóspedes independente garante o acolhimento de visitas com total privacidade.",
         "O grande protagonista da Casa Aurora é o seu átrio interno de convivência. Um generoso deck de madeira conecta o terraço gourmet sob pergolado de madeira a uma impressionante piscina com borda infinita e cascata embutida em parede de pedra natural. O paisagismo elegante e contínuo, composto por espécies nativas de baixa manutenção, abraça toda a extensão da edificação, conferindo sofisticação, frescor e aconchego a este refúgio contemporâneo."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/aurora/01",
+      "fotos": [
+        "img/aurora/01",
+        "img/aurora/02",
+        "img/aurora/03",
+        "img/aurora/04",
+        "img/aurora/05",
+        "img/aurora/06",
+        "img/aurora/07",
+        "img/aurora/08",
+        "img/aurora/09",
+        "img/aurora/10",
+        "img/aurora/11",
+        "img/aurora/12",
+        "img/aurora/13"
+      ]
     },
     {
       "id": "imperium",
@@ -66,8 +93,21 @@
         "Aproveitando o declive natural do terreno, o pavimento inferior é inteiramente dedicado ao lazer e às celebrações. Um generoso terraço gourmet, com forro amadeirado e churrasqueira revestida em mármore, conecta-se diretamente ao pátio externo. A área ao ar livre abriga o deck de madeira e a piscina equipada com deck molhado e hidromassagem, criando um cenário de bem-estar privativo cercado por muros de pedra e detalhes em revestimento cerâmico verde.",
         "O paisagismo minimalista e marcante integra-se com precisão à edificação, utilizando espécies nativas da Mata Atlântica que trazem frescor, brasilidade e baixa manutenção, reafirmando a Casa Imperium como uma obra de alta eficiência, elegância e respeito ao território."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/imperium/01",
+      "fotos": [
+        "img/imperium/01",
+        "img/imperium/02",
+        "img/imperium/03",
+        "img/imperium/04",
+        "img/imperium/05",
+        "img/imperium/06",
+        "img/imperium/07",
+        "img/imperium/08",
+        "img/imperium/09",
+        "img/imperium/10",
+        "img/imperium/11",
+        "img/imperium/12"
+      ]
     },
     {
       "id": "ambar",
@@ -89,11 +129,11 @@
         "O pavimento superior acolhe o setor íntimo da casa, composto por duas amplas suítes master projetadas para garantir a máxima privacidade, descanso e conforto térmico, aproveitando a ventilação natural abundante do litoral potiguar.",
         "A Casa Âmbar reafirma a premissa de que a boa arquitetura é aquela que serve de suporte à vida, onde cada curva, textura e feixe de luz natural convergem para criar um refúgio acolhedor e atemporal."
       ],
-      "capa": "img/ambar/03",
+      "capa": "img/ambar/01",
       "fotos": [
-        "img/ambar/03",
         "img/ambar/01",
         "img/ambar/02",
+        "img/ambar/03",
         "img/ambar/04",
         "img/ambar/05",
         "img/ambar/06",
@@ -106,7 +146,7 @@
       "build": {
         "sketch": "img/ambar/sketch.png",
         "clay": "img/ambar/clay.webp",
-        "foto": "img/ambar/03.webp"
+        "foto": "img/ambar/01.webp"
       }
     },
     {
@@ -131,7 +171,17 @@
       ],
       "capa": "img/solaris/01",
       "fotos": [
-        "img/solaris/01"
+        "img/solaris/01",
+        "img/solaris/02",
+        "img/solaris/03",
+        "img/solaris/04",
+        "img/solaris/05",
+        "img/solaris/06",
+        "img/solaris/07",
+        "img/solaris/08",
+        "img/solaris/09",
+        "img/solaris/10",
+        "img/solaris/11"
       ]
     },
     {
@@ -154,8 +204,20 @@
         "O grande elemento articulador da Casa Amity é o seu átrio central de convivência. Desenhado como um verdadeiro refúgio privativo, o espaço abriga o deck de madeira e uma piscina coroada por uma cascata embutida em parede de pedra. Além do apelo estético e do conforto visual, o átrio atua como pulmão térmico da residência, captando a ventilação predominantemente vinda do litoral potiguar para refrigerar naturalmente todos os pavimentos.",
         "A Casa Amity reafirma o compromisso do Estúdio2Arquitetura com a boa prática projetual: uma obra onde as restrições normativas e topográficas tornam-se oportunidade para erguer uma arquitetura autêntica, acolhedora e integrada ao seu território."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/amity/01",
+      "fotos": [
+        "img/amity/01",
+        "img/amity/02",
+        "img/amity/03",
+        "img/amity/04",
+        "img/amity/05",
+        "img/amity/06",
+        "img/amity/07",
+        "img/amity/08",
+        "img/amity/09",
+        "img/amity/10",
+        "img/amity/11"
+      ]
     },
     {
       "id": "geminus",
@@ -177,8 +239,20 @@
         "O pavimento superior abriga o setor íntimo com quatro dormitórios — distribuídos em duas suítes e duas semisuítes —, desenhados para garantir aconchego e excelente conforto térmico. Voltado para os fundos do terreno, um solarium privativo abre-se diretamente para a copa das árvores e o céu estrelado do condomínio, oferecendo um refúgio exclusivo para contemplação e descompressão.",
         "A Casa Gêminus reafirma a premissa de que a boa arquitetura não depende de excessos de metragem, mas sim da inteligência do desenho capaz de integrar conforto, afeto e funcionalidade no cotidiano da família."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/geminus/01",
+      "fotos": [
+        "img/geminus/01",
+        "img/geminus/02",
+        "img/geminus/03",
+        "img/geminus/04",
+        "img/geminus/05",
+        "img/geminus/06",
+        "img/geminus/07",
+        "img/geminus/08",
+        "img/geminus/09",
+        "img/geminus/10",
+        "img/geminus/11"
+      ]
     },
     {
       "id": "max",
@@ -201,8 +275,19 @@
         "O setor íntimo acolhe quatro amplas suítes privativas — com destaque para as duas suítes master —, desenhadas para oferecer o máximo de privacidade, bem-estar e contemplação da paisagem.",
         "A Casa Max reafirma a premissa de que a boa arquitetura é aquela que transforma os desafios do terreno em protagonismo espacial, equilibrando elegância, conforto e respeito ao território."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/max/01",
+      "fotos": [
+        "img/max/01",
+        "img/max/02",
+        "img/max/03",
+        "img/max/04",
+        "img/max/05",
+        "img/max/06",
+        "img/max/07",
+        "img/max/08",
+        "img/max/09",
+        "img/max/10"
+      ]
     },
     {
       "id": "enlace",
@@ -224,8 +309,23 @@
         "Composta por três suítes — com destaque para a suíte máster —, a área privativa resguarda o silêncio e a intimidade da família. Já a área social celebra o encontro: estar, jantar e cozinha conectam-se de forma fluida ao espaço externo de lazer. A varanda coberta estende-se naturalmente sobre o deck de madeira que contorna a piscina, criando uma transição suave entre o construído e o paisagismo.",
         "A Casa Enlace é, em sua essência, um espaço de permanência e afeto, onde a privacidade e a integração coexistem em perfeita harmonia."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/enlace/01",
+      "fotos": [
+        "img/enlace/01",
+        "img/enlace/02",
+        "img/enlace/03",
+        "img/enlace/04",
+        "img/enlace/05",
+        "img/enlace/06",
+        "img/enlace/07",
+        "img/enlace/08",
+        "img/enlace/09",
+        "img/enlace/10",
+        "img/enlace/11",
+        "img/enlace/12",
+        "img/enlace/13",
+        "img/enlace/14"
+      ]
     },
     {
       "id": "prisma",
@@ -247,14 +347,14 @@
         "Na área externa de lazer, o pátio privativo é o grande protagonista da vida social. Um amplo deck abraça a piscina com área de descanso em deck molhado e uma banheira de hidromassagem integrada, criando uma atmosfera de resort privativo. O paisagismo autoral completa a experiência sensorial, priorizando o uso de espécies nativas de floração contínua que trazem cor, dinamismo e frescor ao microclima da casa ao longo de todas as estações do ano.",
         "A materialidade — que combina o calor dos painéis amadeirados, a robustez da pedra mineral e a sofisticação da estrutura metálica — aliada a uma iluminação cênica contínua que contorna suas lajes, reafirma a Casa Prisma como um ícone da arquitetura contemporânea e de alto padrão de excelência."
       ],
-      "capa": "img/prisma/02",
+      "capa": "img/prisma/01",
       "fotos": [
-        "img/prisma/02",
         "img/prisma/01",
-        "img/prisma/04",
+        "img/prisma/02",
         "img/prisma/03",
-        "img/prisma/06",
+        "img/prisma/04",
         "img/prisma/05",
+        "img/prisma/06",
         "img/prisma/07",
         "img/prisma/08",
         "img/prisma/09",
@@ -278,11 +378,22 @@
         "Concebida como um verdadeiro refúgio para o descanso e a convivência familiar, a Casa Vita traduz a harmonia entre a imponência das formas contemporâneas e a sensação acolhedora do morar. Com 312,00 m² de área construída em Parnamirim/RN, a residência se destaca no contexto do condomínio por sua volumetria marcante e leitura arquitetônica refinada.",
         "A fachada revela um jogo equilibrado de cheios e vazios, no qual marquises estruturais, perfis em pergolado e painéis ripados em tom amadeirado encontram o toque orgânico do revestimento em pedra natural e a elegância dos grandes planos escuros. A iluminação embutida valoriza cada plano geométrico, garantindo uma presença imponente tanto sob a luz do dia quanto ao anoitecer.",
         "Internamente, o programa de necessidades organiza-se de forma a priorizar o conforto térmico, a iluminação natural e a fluidez espacial. A área social integra harmoniosamente as salas de estar e jantar à cozinha, estendendo-se suavemente em direção a um terraço gourmet privativo e intimista. A área de lazer é abraçada por um jardim tropical e conta com piscina equipada com hidromassagem, deck molhado, área de banho e cascata.",
-        "No pavimento superior, a setorização íntima acomoda três suítes — sendo duas suítes máster —, cujas varandas e floreiras integradas contornam a edificação, trazendo o verde para o cotidiano dos dormitórios. A combinação entre sofisticação técnica, rigor volumétrico e aconchego consolida a Casa Vita como um dos projetos mais emblemáticos do estudio2arquitetura em 2025.",
-        "Ficha Técnica:"
+        "No pavimento superior, a setorização íntima acomoda três suítes — sendo duas suítes máster —, cujas varandas e floreiras integradas contornam a edificação, trazendo o verde para o cotidiano dos dormitórios. A combinação entre sofisticação técnica, rigor volumétrico e aconchego consolida a Casa Vita como um dos projetos mais emblemáticos do estudio2arquitetura em 2025."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/vita/01",
+      "fotos": [
+        "img/vita/01",
+        "img/vita/02",
+        "img/vita/03",
+        "img/vita/04",
+        "img/vita/05",
+        "img/vita/06",
+        "img/vita/07",
+        "img/vita/08",
+        "img/vita/09",
+        "img/vita/10",
+        "img/vita/11"
+      ]
     },
     {
       "id": "vitro",
@@ -301,11 +412,21 @@
         "A Casa Vitro nasce de uma busca poética: aliar a transparência do vidro à solidez das formas, criando um jogo refinado de luz, sombra e texturas. Assumido pelo estudio2arquitetura, o desafio de projetar esta residência de 298,00 m² de área construída resultou em uma arquitetura de linhas limpas e presença marcante, perfeitamente adequada ao clima de Parnamirim/RN.",
         "O partido arquitetônico explora a orientação solar de maneira estratégica. Grandes caixilhos envidraçados abrem-se para o sol nascente, inundando os interiores com iluminação natural suave, enquanto superfícies opacas e planos de alvenaria resguardam a edificação do calor vespertino e garantem a privacidade da família. O diálogo entre o brise ripado em madeira, a pedra natural e o rigor dos volumes sobrepostos confere à fachada uma estética contemporânea e leve.",
         "No pavimento térreo, os limites entre interior e exterior são intencionalmente dissolvidos. A integração fluida entre sala de estar, jantar, cozinha e o terraço gourmet culmina em um pátio de lazer acolhedor, onde o deck de madeira, a piscina com cascata e o jardim vertical convidam à permanência. No pavimento superior, as três suítes mantêm-se protegidas e orientadas para captar a ventilação predominante da região.",
-        "A Casa Vitro consolida uma resposta arquitetônica ousada e equilibrada, em que funcionalidade, eficiência térmica e rigor estético se traduzem em bem-estar e qualidade de vida.",
-        "Ficha Técnica:"
+        "A Casa Vitro consolida uma resposta arquitetônica ousada e equilibrada, em que funcionalidade, eficiência térmica e rigor estético se traduzem em bem-estar e qualidade de vida."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/vitro/01",
+      "fotos": [
+        "img/vitro/01",
+        "img/vitro/02",
+        "img/vitro/03",
+        "img/vitro/04",
+        "img/vitro/05",
+        "img/vitro/06",
+        "img/vitro/07",
+        "img/vitro/08",
+        "img/vitro/09",
+        "img/vitro/10"
+      ]
     },
     {
       "id": "vw",
@@ -324,11 +445,36 @@
         "A Casa VW materializa a síntese dos princípios fundamentais do estudio2arquitetura: o respeito à topografia natural do terreno, o rigor com as condicionantes bioclimáticas, a funcionalidade desenhada para a rotina familiar e a busca por uma linguagem estética inovadora. Com 297,00 m² de área construída, a residência tira proveito de um lote em aclive acentuado para esculpir uma volumetria imponente e cheia de personalidade.",
         "O partido arquitetônico explora o contraste entre planos rígidos e texturas acolhedoras. Na fachada, a imponência do pórtico e a verticalidade do acesso principal fundem-se ao toque orgânico da pedra natural e à sofisticação dos ripados amadeirados, que atuam como brises para filtrar a luz e garantir conforto térmico contínuo. Ao entardecer, o projeto de iluminação cênica destaca a sobreposição das formas e a elegância dos materiais.",
         "No pavimento térreo, a planta livre elimina barreiras visuais e promove a integração total entre sala de estar com pé-direito duplo, sala de jantar e cozinha americana. Grandes painéis de vidro de piso ao teto conectam todo o setor social ao pátio privativo nos fundos, onde o terraço gourmet equipado e a piscina com cascata criam um cenário perfeito para os momentos de lazer.",
-        "No pavimento superior, a área íntima acomoda três suítes generosas, todas orientadas estrategicamente para a área de lazer e contemplação da família. Essa escolha garante que, em qualquer ponto da casa, a transição entre o interior e o exterior ocorra de maneira natural e fluida. O mobiliário autoral e os revestimentos internos primorosos coroam a edificação, entregando um refúgio de sofisticação, leveza e bem-estar.",
-        "Ficha Técnica:"
+        "No pavimento superior, a área íntima acomoda três suítes generosas, todas orientadas estrategicamente para a área de lazer e contemplação da família. Essa escolha garante que, em qualquer ponto da casa, a transição entre o interior e o exterior ocorra de maneira natural e fluida. O mobiliário autoral e os revestimentos internos primorosos coroam a edificação, entregando um refúgio de sofisticação, leveza e bem-estar."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/vw/01",
+      "fotos": [
+        "img/vw/01",
+        "img/vw/02",
+        "img/vw/03",
+        "img/vw/04",
+        "img/vw/05",
+        "img/vw/06",
+        "img/vw/07",
+        "img/vw/08",
+        "img/vw/09",
+        "img/vw/10",
+        "img/vw/11",
+        "img/vw/12",
+        "img/vw/13",
+        "img/vw/14",
+        "img/vw/15",
+        "img/vw/16",
+        "img/vw/17",
+        "img/vw/18",
+        "img/vw/19",
+        "img/vw/20",
+        "img/vw/21",
+        "img/vw/22",
+        "img/vw/23",
+        "img/vw/24",
+        "img/vw/25"
+      ]
     },
     {
       "id": "agnus",
@@ -347,11 +493,29 @@
         "Concebida sob o partido de compreender a morada como um verdadeiro santuário, a Casa Agnus transcende a mera escolha formal de materiais para criar um espaço de acolhimento, vivência íntima e profunda conexão com a espiritualidade. Executada em 2025 pelo estudio2arquitetura, a residência de 312,00 m² traduz o desejo da família de consolidar um lar onde cada detalhe da fachada carrega significado e propósito.",
         "A volumetria expressa essa essência por meio do equilíbrio entre solidez e acolhimento. A composição combina planos sóbrios em tons escuros e texturas terrosas a rasgos luminosos verticais e horizontais, desenhando uma iluminação cênica ao entardecer que destaca a entrada e os patamares da escada de acesso. No pavimento superior, o volume recua para criar uma varanda coberta de atmosfera íntima e contemplativa.",
         "Com foco absoluto no bem-estar e na acessibilidade universal, o projeto organiza-se em torno de um jardim interno que filtra a luz natural e otimiza a ventilação cruzada por todos os cômodos. A integração do pavimento térreo une sala de estar, jantar, cozinha e um terraço gourmet voltado para um generoso quintal. Uma plataforma vertical integra os dois níveis para atender a necessidades de mobilidade reduzida, complementando a suíte térrea totalmente acessível.",
-        "O ponto alto da espacialidade é a capela privada consagrada a Nossa Senhora, um espaço de oração e recolhimento que coroa a presença do sagrado na rotina da casa. A Casa Agnus se firma como uma síntese singular de arquitetura bioclimática, acessibilidade plena e fé convertida em espaço.",
-        "Ficha Técnica:"
+        "O ponto alto da espacialidade é a capela privada consagrada a Nossa Senhora, um espaço de oração e recolhimento que coroa a presença do sagrado na rotina da casa. A Casa Agnus se firma como uma síntese singular de arquitetura bioclimática, acessibilidade plena e fé convertida em espaço."
       ],
-      "capa": "",
-      "fotos": []
+      "capa": "img/agnus/01",
+      "fotos": [
+        "img/agnus/01",
+        "img/agnus/02",
+        "img/agnus/03",
+        "img/agnus/04",
+        "img/agnus/05",
+        "img/agnus/06",
+        "img/agnus/07",
+        "img/agnus/08",
+        "img/agnus/09",
+        "img/agnus/10",
+        "img/agnus/11",
+        "img/agnus/12",
+        "img/agnus/13",
+        "img/agnus/14",
+        "img/agnus/15",
+        "img/agnus/16",
+        "img/agnus/17",
+        "img/agnus/18"
+      ]
     },
     {
       "id": "solis",
@@ -360,7 +524,8 @@
       "cat_label": "Casas",
       "cidade": "Parnamirim, RN",
       "ano": "2023",
-      "placeholder": true
+      "placeholder": true,
+      "texto": []
     },
     {
       "id": "parnamirim",
@@ -369,7 +534,8 @@
       "cat_label": "Urbano",
       "cidade": "Parnamirim, RN",
       "ano": "2025",
-      "placeholder": true
+      "placeholder": true,
+      "texto": []
     }
   ]
 }
