@@ -143,7 +143,11 @@
 .build{position:absolute;inset:0;overflow:hidden;background:#07090A;transition:transform 1.8s var(--ease);will-change:transform}
 .slide:not(.on) .build{transform:scale(1.1)}
 .build .cam{position:absolute;inset:-7% 0;transform:scale(1.04);animation:kb 34s var(--ease-io) infinite alternate;will-change:transform}
-.build .ly{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;opacity:0;transition:opacity 1.2s var(--ease)}
+.build .ly{position:absolute;inset:0;opacity:0;transition:opacity 1.2s var(--ease)}
+.build .ly img{position:absolute;display:block}
+.build .ly .bg{inset:0;width:100%;height:100%;object-fit:cover;filter:blur(34px) brightness(.45) saturate(1.1);transform:scale(1.2)}
+.build .ly .fg{top:9%;left:0;width:calc(100% - 4vw);height:82%;object-fit:contain;object-position:right center}
+@media (max-width:900px){.build .ly .fg{top:8%;width:100%;height:60%;object-position:center top}}
 .build .ly.on{opacity:1}
 .build .vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(7,9,10,.08) 0%,rgba(7,9,10,.08) 38%,rgba(7,9,10,.5) 64%,rgba(7,9,10,.86) 84%,rgba(7,9,10,.96) 100%)}
 .build .cap{position:absolute;right:var(--wl);bottom:106px;z-index:4;display:flex;align-items:center;gap:12px;font:500 10px/1 var(--ff-t);letter-spacing:.3em;text-transform:uppercase;color:var(--sand);text-shadow:0 2px 14px rgba(0,0,0,.6)}
@@ -222,7 +226,7 @@
 <main>
 <!-- HERO -->
 <section class="hero" id="topo">
-  <div class="pic"><canvas id="sky" aria-hidden="true"></canvas><picture><source media="(max-width:700px)" srcset="img/solaris/hero-fg-m.webp"><img id="heroFg" src="img/solaris/hero-fg.webp" alt="Casa Solaris ao entardecer" fetchpriority="high"></picture><div class="alt" id="heroAlt"></div><div class="dark" id="heroDark"></div></div>
+  <div class="pic"><canvas id="sky" aria-hidden="true"></canvas><picture><source media="(max-width:700px)" srcset="img/hero/agnus-m.webp"><img id="heroFg" src="img/hero/agnus.webp" alt="Casa Agnus ao anoitecer" fetchpriority="high"></picture><div class="alt" id="heroAlt"></div><div class="dark" id="heroDark"></div></div>
   <div class="veil"></div>
   <div class="wrap">
     <p class="k">Fabrício Lira · Natal, RN</p>
@@ -352,7 +356,7 @@
 
 <!-- FRASE 2 -->
 <section class="sec manif manif2 img" id="frase2">
-  <div class="bg" id="f2bg"><div class="zoom"><img src="img/prisma/01.webp" alt="" loading="lazy"></div></div>
+  <div class="bg" id="f2bg"><div class="zoom"><img src="img/geminus/08.webp" alt="" loading="lazy"></div></div>
   <div class="wrap"><span class="k">Estúdio2</span><p class="quote" data-em="conectando vidas">Construindo espaços, conectando vidas.</p></div>
 </section>
 
@@ -446,7 +450,7 @@
       ctx.globalCompositeOperation="source-over"}
     requestAnimationFrame(draw)})();
   /* hero: imagens alternando com escurecimento sutil */
-  (function(){if(RM)return;var alt=$("#heroAlt"),dark=$("#heroDark"),SRC=["img/ambar/03.webp","img/prisma/01.webp"],imgs=[],cur=-1;
+  (function(){if(RM)return;var alt=$("#heroAlt"),dark=$("#heroDark"),SRC=["img/hero/estrela","img/hero/vw"].map(function(u){return u+(matchMedia("(max-width:700px)").matches?"-m":"")+".webp"}),imgs=[],cur=-1;
     function start(){imgs=SRC.map(function(u){var im=document.createElement("img");im.src=u;im.alt="";im.draggable=false;alt.appendChild(im);return im});
       setInterval(function(){if(document.hidden||scrollY>innerHeight)return;var nx=cur+1;if(nx>=imgs.length)nx=-1;dark.classList.add("on");
         setTimeout(function(){imgs.forEach(function(im,i){im.classList.toggle("on",i===nx)});cur=nx},1000);setTimeout(function(){dark.classList.remove("on")},2400)},7000)}
@@ -456,14 +460,19 @@
   ((window.PROJETOS||{}).projetos||[]).forEach(function(p){PJ[p.id]=p});
   function pad(n){return (n<10?"0":"")+n}
   var gals=slides.map(function(sl){var p=PJ[sl.getAttribute("data-id")],cam=$(".cam",sl),thumbs=$(".thumbs",sl),capTxt=$(".cap span",sl);if(!p||!thumbs)return null;
-    var F=(p.fotos||[]).slice(0,6);if(!F.length){$(".cap",sl).style.display="none";return null}
-    var first=document.createElement("img");first.className="ly on";first.src=F[0]+".webp";first.alt=p.nome;first.draggable=false;first.loading="lazy";cam.appendChild(first);
+    var F=(p.destaque_fotos||p.fotos||[]).slice(0,6);if(!F.length){$(".cap",sl).style.display="none";return null}
+    /* cada camada: a foto inteira (contain) sobre um fundo desfocado dela mesma */
+    function layer(src,on){var d=document.createElement("div");d.className="ly"+(on?" on":"");
+      var b=document.createElement("img");b.className="bg";b.src=src;b.alt="";b.draggable=false;b.loading="lazy";
+      var f=document.createElement("img");f.className="fg";f.src=src;f.alt=p.nome;f.draggable=false;f.loading="lazy";
+      d.appendChild(b);d.appendChild(f);cam.appendChild(d);return {el:d,img:f}}
+    layer(F[0]+".webp",true);
     capTxt.textContent=pad(1)+" / "+pad(F.length);
     thumbs.innerHTML=F.map(function(f,i){return '<button type="button" data-i="'+i+'" class="'+(i===0?"on":"")+'"><img src="'+f+'-t.webp" alt="" draggable="false" loading="lazy"></button>'}).join("");
     function sel(i){$$("button",thumbs).forEach(function(x,j){x.classList.toggle("on",j===i)});
-      var im=document.createElement("img");im.className="ly";im.src=F[i]+".webp";im.alt=p.nome;im.draggable=false;cam.appendChild(im);
+      var L=layer(F[i]+".webp",false),im=L.el;L.img.loading="eager";
       function sw(){requestAnimationFrame(function(){im.classList.add("on");$$(".ly",cam).forEach(function(o){if(o!==im)o.classList.remove("on")});setTimeout(function(){$$(".ly",cam).forEach(function(o){if(o!==im)o.remove()})},1300)});capTxt.textContent=pad(i+1)+" / "+pad(F.length)}
-      if(im.complete)sw();else im.onload=sw}
+      if(L.img.complete)sw();else L.img.onload=sw}
     $$("button",thumbs).forEach(function(b){b.onclick=function(){sel(+b.getAttribute("data-i"));startAuto()}});
     return {next:function(){var cur=+$("button.on",thumbs).getAttribute("data-i");sel((cur+1)%F.length)}}});
   var autoT;function startAuto(){clearInterval(autoT);autoT=setInterval(function(){if(document.hidden||!gals[k])return;var r=$("#car").getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;gals[k].next()},5000)}startAuto();
