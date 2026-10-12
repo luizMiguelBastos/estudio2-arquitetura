@@ -143,11 +143,8 @@
 .build{position:absolute;inset:0;overflow:hidden;background:#07090A;transition:transform 1.8s var(--ease);will-change:transform}
 .slide:not(.on) .build{transform:scale(1.1)}
 .build .cam{position:absolute;inset:-7% 0;transform:scale(1.04);animation:kb 34s var(--ease-io) infinite alternate;will-change:transform}
-.build .ly{position:absolute;inset:0;opacity:0;transition:opacity 1.2s var(--ease)}
-.build .ly img{position:absolute;display:block}
-.build .ly .bg{inset:0;width:100%;height:100%;object-fit:cover;filter:blur(34px) brightness(.45) saturate(1.1);transform:scale(1.2)}
-.build .ly .fg{top:9%;left:0;width:calc(100% - 4vw);height:82%;object-fit:contain;object-position:right center}
-@media (max-width:900px){.build .ly .fg{top:8%;width:100%;height:60%;object-position:center top}}
+.build .ly{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,center 55%);opacity:0;transition:opacity 1.2s var(--ease)}
+@media (max-width:900px){.build .ly{object-position:var(--pos-m,var(--pos,center 55%))}}
 .build .ly.on{opacity:1}
 .build .vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(7,9,10,.08) 0%,rgba(7,9,10,.08) 38%,rgba(7,9,10,.5) 64%,rgba(7,9,10,.86) 84%,rgba(7,9,10,.96) 100%)}
 .build .cap{position:absolute;right:var(--wl);bottom:106px;z-index:4;display:flex;align-items:center;gap:12px;font:500 10px/1 var(--ff-t);letter-spacing:.3em;text-transform:uppercase;color:var(--sand);text-shadow:0 2px 14px rgba(0,0,0,.6)}
@@ -461,18 +458,18 @@
   function pad(n){return (n<10?"0":"")+n}
   var gals=slides.map(function(sl){var p=PJ[sl.getAttribute("data-id")],cam=$(".cam",sl),thumbs=$(".thumbs",sl),capTxt=$(".cap span",sl);if(!p||!thumbs)return null;
     var F=(p.destaque_fotos||p.fotos||[]).slice(0,6);if(!F.length){$(".cap",sl).style.display="none";return null}
-    /* cada camada: a foto inteira (contain) sobre um fundo desfocado dela mesma */
-    function layer(src,on){var d=document.createElement("div");d.className="ly"+(on?" on":"");
-      var b=document.createElement("img");b.className="bg";b.src=src;b.alt="";b.draggable=false;b.loading="lazy";
-      var f=document.createElement("img");f.className="fg";f.src=src;f.alt=p.nome;f.draggable=false;f.loading="lazy";
-      d.appendChild(b);d.appendChild(f);cam.appendChild(d);return {el:d,img:f}}
-    layer(F[0]+".webp",true);
+    /* enquadramento por foto (destaque_foco: [desktop, celular]) para mostrar a casa inteira */
+    var FOCO=p.destaque_foco||{};
+    function layer(f,on){var im=document.createElement("img");im.className="ly"+(on?" on":"");im.src=f+".webp";im.alt=p.nome;im.draggable=false;
+      var fc=FOCO[f];if(fc){im.style.setProperty("--pos",fc[0]);if(fc[1])im.style.setProperty("--pos-m",fc[1])}
+      cam.appendChild(im);return im}
+    layer(F[0],true).loading="lazy";
     capTxt.textContent=pad(1)+" / "+pad(F.length);
     thumbs.innerHTML=F.map(function(f,i){return '<button type="button" data-i="'+i+'" class="'+(i===0?"on":"")+'"><img src="'+f+'-t.webp" alt="" draggable="false" loading="lazy"></button>'}).join("");
     function sel(i){$$("button",thumbs).forEach(function(x,j){x.classList.toggle("on",j===i)});
-      var L=layer(F[i]+".webp",false),im=L.el;L.img.loading="eager";
+      var im=layer(F[i],false);
       function sw(){requestAnimationFrame(function(){im.classList.add("on");$$(".ly",cam).forEach(function(o){if(o!==im)o.classList.remove("on")});setTimeout(function(){$$(".ly",cam).forEach(function(o){if(o!==im)o.remove()})},1300)});capTxt.textContent=pad(i+1)+" / "+pad(F.length)}
-      if(L.img.complete)sw();else L.img.onload=sw}
+      if(im.complete)sw();else im.onload=sw}
     $$("button",thumbs).forEach(function(b){b.onclick=function(){sel(+b.getAttribute("data-i"));startAuto()}});
     return {next:function(){var cur=+$("button.on",thumbs).getAttribute("data-i");sel((cur+1)%F.length)}}});
   var autoT;function startAuto(){clearInterval(autoT);autoT=setInterval(function(){if(document.hidden||!gals[k])return;var r=$("#car").getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;gals[k].next()},5000)}startAuto();
