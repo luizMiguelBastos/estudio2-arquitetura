@@ -466,15 +466,23 @@
     layer(F[0],true).loading="lazy";
     capTxt.textContent=pad(1)+" / "+pad(F.length);
     thumbs.innerHTML=F.map(function(f,i){return '<button type="button" data-i="'+i+'" class="'+(i===0?"on":"")+'"><img src="'+f+'-t.webp" alt="" draggable="false" loading="lazy"></button>'}).join("");
-    function sel(i){$$("button",thumbs).forEach(function(x,j){x.classList.toggle("on",j===i)});
-      var im=layer(F[i],false);
-      function sw(){requestAnimationFrame(function(){im.classList.add("on");$$(".ly",cam).forEach(function(o){if(o!==im)o.classList.remove("on")});setTimeout(function(){$$(".ly",cam).forEach(function(o){if(o!==im)o.remove()})},1300)});capTxt.textContent=pad(i+1)+" / "+pad(F.length)}
-      if(im.complete)sw();else im.onload=sw}
+    /* troca sem tela preta: a nova foto só entra depois de carregada e decodificada,
+       por cima da atual (que continua visível até a nova terminar o fade) */
+    var seq=0;
+    function sel(i){$$("button",thumbs).forEach(function(x,j){x.classList.toggle("on",j===i)});capTxt.textContent=pad(i+1)+" / "+pad(F.length);
+      var my=++seq,im=layer(F[i],false);
+      function sw(){if(my!==seq){im.remove();return}
+        requestAnimationFrame(function(){im.classList.add("on");setTimeout(function(){$$(".ly",cam).forEach(function(o){if(o!==im)o.remove()})},1300)})}
+      function ready(){(im.decode?im.decode():Promise.resolve()).then(sw,sw)}
+      if(im.complete)ready();else{im.onload=ready;im.onerror=sw}}
+    var warmed=false;function warm(){if(warmed)return;warmed=true;F.forEach(function(f){var x=new Image();x.src=f+".webp"})}
     $$("button",thumbs).forEach(function(b){b.onclick=function(){sel(+b.getAttribute("data-i"));startAuto()}});
-    return {next:function(){var cur=+$("button.on",thumbs).getAttribute("data-i");sel((cur+1)%F.length)}}});
+    return {warm:warm,first:function(){var x=new Image();x.src=F[0]+".webp"},next:function(){var cur=+$("button.on",thumbs).getAttribute("data-i");sel((cur+1)%F.length)}}});
+  /* pré-carrega: perto da seção, a foto inicial de cada destaque e todas as do destaque atual */
+  new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;gals.forEach(function(g){if(g)g.first()});if(gals[k])gals[k].warm()},{rootMargin:"600px 0px"}).observe($("#car"));
   var autoT;function startAuto(){clearInterval(autoT);autoT=setInterval(function(){if(document.hidden||!gals[k])return;var r=$("#car").getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;gals[k].next()},5000)}startAuto();
   var trk=$("#track");
-  function go(i){k=Math.max(0,Math.min(slides.length-1,i));startAuto();trk.classList.remove("drag");trk.style.transform="translate3d("+(-k*100)+"%,0,0)";slides.forEach(function(s,j){s.classList.toggle("on",j===k)});dots.forEach(function(d,j){d.classList.toggle("on",j===k)})}
+  function go(i){k=Math.max(0,Math.min(slides.length-1,i));startAuto();if(gals[k])gals[k].warm();trk.classList.remove("drag");trk.style.transform="translate3d("+(-k*100)+"%,0,0)";slides.forEach(function(s,j){s.classList.toggle("on",j===k)});dots.forEach(function(d,j){d.classList.toggle("on",j===k)})}
   $("#prev").onclick=function(){go(k-1)};$("#next").onclick=function(){go(k+1)};
   (function(){var down=false,sx=0,dx=0,w=0;trk.addEventListener("pointerdown",function(e){if(e.target.closest("button,a"))return;down=true;dx=0;sx=e.clientX;w=trk.clientWidth;trk.classList.add("drag");trk.setPointerCapture(e.pointerId)});
     trk.addEventListener("pointermove",function(e){if(!down)return;dx=e.clientX-sx;var lim=(k===0&&dx>0)||(k===slides.length-1&&dx<0)?.35:1;trk.style.transform="translate3d(calc("+(-k*100)+"% + "+(dx*lim)+"px),0,0)"});
