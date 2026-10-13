@@ -15,7 +15,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .wrap{width:min(100% - 2*var(--gutter),1400px);margin-inline:auto}
 h1,h2,h3{font-family:var(--ff-d);font-weight:400;letter-spacing:-.01em;line-height:1.02;color:#fff}
 h2{font-size:clamp(34px,3.4vw,50px)}
-em{font-style:normal;color:var(--sage)}
+em{font-style:italic;color:var(--sage)}
 .k{font:500 11px/1 var(--ff-t);letter-spacing:.3em;text-transform:uppercase;color:var(--sage)}
 .lede{color:var(--mute);font-size:clamp(15px,1.15vw,17px);max-width:56ch}
 .btn{display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 26px;border:1px solid var(--sand);color:var(--sand);font:500 11px/1 var(--ff-t);letter-spacing:.26em;text-transform:uppercase;position:relative;overflow:hidden;isolation:isolate;transition:color .5s,border-color .5s}
