@@ -135,6 +135,12 @@
 .manif2 .quote{font-size:clamp(30px,4vw,60px);max-width:22ch}
 /* destaques */
 .feat-head{display:grid;gap:14px;justify-items:start;text-align:left;max-width:60ch;margin-bottom:clamp(30px,4vw,54px)}
+/* destaques colados ao manifesto: sem faixa acima; no desktop o título fica dentro do painel preto */
+#destaques{padding-top:0}
+@media (max-width:900px){#destaques .feat-head{padding-top:clamp(44px,8vw,64px);margin-bottom:28px}}
+@media (min-width:901px){#destaques .feat-head{position:absolute;z-index:6;left:0;top:calc(77px + clamp(14px,2.6vh,30px));margin:0;max-width:calc(44vw - var(--wl) - 40px);pointer-events:none}
+#destaques .feat-head h2{font-size:clamp(28px,2.6vw,40px)}#destaques .feat-head .lede{font-size:14px;max-width:40ch}}
+@media (min-width:901px) and (max-height:860px){#destaques .feat-head{grid-auto-flow:column;align-items:baseline;gap:16px}#destaques .feat-head .lede{display:none}#destaques .feat-head h2{font-size:26px}}
 .band{position:relative}
 .car{position:relative;border:0;background:#0E0F0E;overflow:hidden;width:100vw;margin-left:calc(-1 * var(--wl))}
 .track{display:flex;width:100%;transition:transform 1s var(--ease);will-change:transform;cursor:grab;user-select:none;touch-action:pan-y}.track.drag{transition:none;cursor:grabbing}
@@ -294,8 +300,7 @@
 <!-- DESTAQUES -->
 <section class="sec deep" id="destaques"><span class="sec-cap">03 · Destaques</span>
   <div class="wrap">
-    <div class="feat-head rv right"><p class="k">Destaques</p><h2>Projetos em <em>destaque</em></h2><p class="lede">Do primeiro traço à casa construída. Arraste para o lado para ver o próximo projeto.</p></div>
-    <div class="band"><div class="car rv" id="car">
+    <div class="band"><div class="feat-head rv right"><p class="k">Destaques</p><h2>Projetos em <em>destaque</em></h2><p class="lede">Do primeiro traço à casa construída. Arraste para o lado para ver o próximo projeto.</p></div><div class="car rv" id="car">
       <div class="track" id="track">
       <div class="slide on" data-id="max">
         <div class="build">
