@@ -56,7 +56,8 @@
           "50% 43%",
           "50% 50%"
         ]
-      }
+      },
+      "slug": "casa-agnus"
     },
     {
       "id": "estrela",
@@ -91,7 +92,8 @@
         "img/estrela/10",
         "img/estrela/11",
         "img/estrela/12"
-      ]
+      ],
+      "slug": "casa-estrela"
     },
     {
       "id": "vw",
@@ -156,7 +158,8 @@
           "50% 90%",
           "50% 50%"
         ]
-      }
+      },
+      "slug": "casa-vw"
     },
     {
       "id": "lumina",
@@ -199,7 +202,8 @@
         "img/lumina/18",
         "img/lumina/19",
         "img/lumina/20"
-      ]
+      ],
+      "slug": "casa-lumina"
     },
     {
       "id": "lima",
@@ -235,7 +239,8 @@
         "img/lima/10",
         "img/lima/11",
         "img/lima/12"
-      ]
+      ],
+      "slug": "edificio-lima"
     },
     {
       "id": "aurora",
@@ -272,7 +277,8 @@
         "img/aurora/11",
         "img/aurora/12",
         "img/aurora/13"
-      ]
+      ],
+      "slug": "casa-aurora"
     },
     {
       "id": "imperium",
@@ -308,7 +314,8 @@
         "img/imperium/10",
         "img/imperium/11",
         "img/imperium/12"
-      ]
+      ],
+      "slug": "casa-imperium"
     },
     {
       "id": "ambar",
@@ -348,7 +355,8 @@
         "sketch": "img/ambar/sketch.png",
         "clay": "img/ambar/clay.webp",
         "foto": "img/ambar/01.webp"
-      }
+      },
+      "slug": "casa-ambar"
     },
     {
       "id": "solaris",
@@ -383,7 +391,8 @@
         "img/solaris/09",
         "img/solaris/10",
         "img/solaris/11"
-      ]
+      ],
+      "slug": "casa-solaris"
     },
     {
       "id": "amity",
@@ -418,7 +427,8 @@
         "img/amity/09",
         "img/amity/10",
         "img/amity/11"
-      ]
+      ],
+      "slug": "casa-amity"
     },
     {
       "id": "geminus",
@@ -453,7 +463,8 @@
         "img/geminus/09",
         "img/geminus/10",
         "img/geminus/11"
-      ]
+      ],
+      "slug": "casa-geminus"
     },
     {
       "id": "max",
@@ -513,7 +524,8 @@
           "30% 80%",
           "30% 50%"
         ]
-      }
+      },
+      "slug": "casa-max"
     },
     {
       "id": "enlace",
@@ -551,7 +563,8 @@
         "img/enlace/12",
         "img/enlace/13",
         "img/enlace/14"
-      ]
+      ],
+      "slug": "casa-enlace"
     },
     {
       "id": "prisma",
@@ -585,7 +598,8 @@
         "img/prisma/08",
         "img/prisma/09",
         "img/prisma/10"
-      ]
+      ],
+      "slug": "casa-prisma"
     },
     {
       "id": "vita",
@@ -619,7 +633,8 @@
         "img/vita/09",
         "img/vita/10",
         "img/vita/11"
-      ]
+      ],
+      "slug": "casa-vita"
     },
     {
       "id": "vitro",
@@ -652,7 +667,8 @@
         "img/vitro/08",
         "img/vitro/09",
         "img/vitro/10"
-      ]
+      ],
+      "slug": "casa-vitro"
     },
     {
       "id": "solis",
@@ -662,7 +678,8 @@
       "cidade": "Parnamirim, RN",
       "ano": "2023",
       "placeholder": true,
-      "texto": []
+      "texto": [],
+      "slug": "casa-solis"
     },
     {
       "id": "parnamirim",
@@ -672,7 +689,8 @@
       "cidade": "Parnamirim, RN",
       "ano": "2025",
       "placeholder": true,
-      "texto": []
+      "texto": [],
+      "slug": "parnamirim-cidade-sustentavel"
     }
   ]
 }
