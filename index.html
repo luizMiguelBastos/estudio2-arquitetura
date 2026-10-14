@@ -8,6 +8,9 @@
 <meta name="theme-color" content="#0A0C0A">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500&display=swap">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="shared.css">
 <script src="projetos.js"></script>
 <style>
@@ -108,8 +111,8 @@
 .who .fig-quote{position:absolute;z-index:3;left:0;bottom:96px;margin:0;max-width:none;display:grid;gap:12px;font:italic 400 28px/1.12 var(--ff-d);color:var(--sand);text-shadow:0 2px 18px rgba(0,0,0,.75)}
 .who .fig-quote em{color:var(--sage)}
 .who .fig-quote i{display:block;width:44px;height:1px;background:var(--sage)}
-.fig-mono{position:absolute;left:-14%;top:-20%;z-index:0;font:italic 400 clamp(220px,24vw,360px)/1 var(--ff-d);color:transparent;-webkit-text-stroke:1px rgba(163,177,138,.22);pointer-events:none;user-select:none}
-@media (max-width:899px){.fig-stage{width:100%;justify-self:stretch;padding:16px 0 30px 0}.fig-line{left:30px;right:-10px;top:0;bottom:16px}.fig-mono{font-size:160px;top:-14%;left:auto;right:-2%}.who .fig span{left:22px;right:auto;text-align:left}.who .fig span::before{left:-22px;right:auto;background:radial-gradient(ellipse at 0% 100%,rgba(7,9,10,.78) 0%,rgba(7,9,10,.45) 42%,rgba(7,9,10,0) 72%)}.who .fig-quote{position:relative;left:auto;bottom:auto;margin:20px 0 0 0;font-size:24px}.fig-stage{container-type:inline-size}.fig-line{bottom:auto;height:calc(62.5cqw + 16px)}}
+.fig-mono{position:absolute;left:-12%;top:-16%;z-index:0;width:clamp(190px,19vw,290px);height:auto;opacity:.06;pointer-events:none;user-select:none}
+@media (max-width:899px){.fig-stage{width:100%;justify-self:stretch;padding:16px 0 30px 0}.fig-line{left:30px;right:-10px;top:0;bottom:16px}.fig-mono{width:130px;top:-10%;left:auto;right:-2%}.who .fig span{left:22px;right:auto;text-align:left}.who .fig span::before{left:-22px;right:auto;background:radial-gradient(ellipse at 0% 100%,rgba(7,9,10,.78) 0%,rgba(7,9,10,.45) 42%,rgba(7,9,10,0) 72%)}.who .fig-quote{position:relative;left:auto;bottom:auto;margin:20px 0 0 0;font-size:24px}.fig-stage{container-type:inline-size}.fig-line{bottom:auto;height:calc(62.5cqw + 16px)}}
 @media (prefers-reduced-motion:reduce){.who .fig img{animation:none}}
 .studio-head{display:grid;gap:26px;align-items:center}
 @media (min-width:900px){.studio-head{grid-template-columns:1fr 1fr;gap:56px 72px;align-items:start}.studio-head>div:nth-child(2){max-width:520px}.atua{grid-column:1}.selo{grid-column:2;max-width:520px}}
@@ -244,7 +247,7 @@
 <body>
 
 <header class="nav" id="nav"><div class="wrap">
-  <a class="brand" href="#topo"><i>e2</i>estudio2arquitetura</a>
+  <a class="brand" href="#topo"><i><img src="img/e2.svg" alt=""></i>estudio2arquitetura</a>
   <nav class="menu" id="menu"><a href="#topo">Início</a><a href="#sobre">Sobre</a><a href="#estudio">Estúdio</a><a href="#destaques">Destaques</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
   <div style="display:flex;gap:10px;align-items:center"><a class="btn" href="#contato" id="navBtn"><span class="lg">Entre em contato</span><span class="sm">Contato</span></a><button class="burger" id="burger" aria-label="Menu"><i></i><i></i><i></i></button></div>
 </div></header>
@@ -275,7 +278,7 @@
             <p>Arquiteto e urbanista, mestre e doutor em Arquitetura e Urbanismo. Autor de mais de 400 projetos de arquitetura e desenho urbano. Há mais de duas décadas à frente do Estúdio2, coordena uma equipe de arquitetos e engenheiros especialistas em áreas diversas da arquitetura, engenharia e gestão de obras.</p>
             <div class="proof"><div><b>Doutor</b><span>em Arquitetura e Urbanismo</span></div><div><b>Quase 30</b><span>anos de arquitetura</span></div><div><b>400+</b><span>projetos de arquitetura e desenho urbano</span></div><div><b>+20</b><span>anos à frente do Estúdio2</span></div></div></div>
           <div class="fig-stage">
-            <span class="fig-mono" aria-hidden="true">e2</span>
+            <img class="fig-mono" src="img/e2.svg" alt="" aria-hidden="true">
             <span class="fig-line" aria-hidden="true"></span>
             <figure class="fig"><img src="img/fabricio.webp" alt="Fabrício Lira" loading="lazy"><span>Fabrício Lira<br>Arquiteto e urbanista</span></figure>
             <p class="fig-quote"><i aria-hidden="true"></i><span>Construindo espaços,<br><em>conectando vidas.</em></span></p>

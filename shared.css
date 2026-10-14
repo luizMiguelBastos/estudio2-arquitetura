@@ -28,7 +28,7 @@ em{font-style:italic;color:var(--sage)}
 .nav.solid{background:rgba(10,12,10,.82);backdrop-filter:blur(12px);border-color:var(--line)}
 .nav .wrap{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:12px;font-family:var(--ff-t);font-weight:500;letter-spacing:.04em;font-size:13px;color:#fff}
-.brand i{width:36px;height:36px;border:1px solid var(--sand);display:grid;place-items:center;font:500 17px var(--ff-d);font-style:normal;color:var(--sand)}
+.brand i{width:36px;height:36px;border:1px solid var(--sand);display:grid;place-items:center;font:500 17px var(--ff-d);font-style:normal;color:var(--sand)}.brand i img{display:block;width:auto;height:22px}
 .menu{display:none;gap:30px;font:500 11px/1 var(--ff-t);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
 .menu a{position:relative;padding:6px 0;transition:color .3s}.menu a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--sage);transition:width .4s var(--ease)}
 .menu a:hover,.menu a.on{color:#fff}.menu a:hover::after,.menu a.on::after{width:100%}
