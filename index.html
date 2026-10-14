@@ -95,6 +95,22 @@
 .who .fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
 .who .fig span{z-index:1}.who .fig span::before{content:"";position:absolute;left:-22px;bottom:-20px;width:300px;height:150px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 0% 100%,rgba(7,9,10,.78) 0%,rgba(7,9,10,.45) 42%,rgba(7,9,10,0) 72%)}
 .who .fig::after{content:"";position:absolute;inset:14px;border:1px solid var(--line);pointer-events:none}
+/* Sobre: fundo mais escuro com a grade do estúdio e composição em camadas ao redor do retrato */
+.p-fab{background:#070908}
+.p-fab .bp{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.7;background-image:linear-gradient(rgba(218,215,205,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(218,215,205,.06) 1px,transparent 1px),linear-gradient(rgba(218,215,205,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(218,215,205,.03) 1px,transparent 1px);background-size:160px 160px,160px 160px,32px 32px,32px 32px;mask-image:radial-gradient(60% 75% at 74% 50%,#000 25%,transparent 100%);-webkit-mask-image:radial-gradient(60% 75% at 74% 50%,#000 25%,transparent 100%)}
+.p-fab .wrap{position:relative;z-index:1}
+.fig-stage{position:relative;justify-self:end;width:min(100%,500px);padding:26px 0 54px 80px}
+.who .fig-stage .fig{width:100%;justify-self:auto;z-index:1}
+.who .fig img{filter:brightness(.72) contrast(1.08) saturate(.9);animation:kb 34s var(--ease-io) infinite alternate}
+.who .fig::before{z-index:1;background:radial-gradient(110% 85% at 58% 32%,rgba(7,9,10,0) 35%,rgba(7,9,10,.7) 100%),linear-gradient(180deg,rgba(7,9,10,.25) 0%,rgba(7,9,10,0) 30%,rgba(7,9,10,0) 60%,rgba(7,9,10,.7) 100%)}
+.who .fig::after{z-index:2}.who .fig span{z-index:3;left:auto;right:22px;text-align:right}.who .fig span::before{left:auto;right:-22px;background:radial-gradient(ellipse at 100% 100%,rgba(7,9,10,.78) 0%,rgba(7,9,10,.45) 42%,rgba(7,9,10,0) 72%)}
+.fig-line{position:absolute;top:0;right:-22px;bottom:30px;left:110px;border:1px solid rgba(163,177,138,.4);pointer-events:none}
+.who .fig-quote{position:absolute;z-index:3;left:0;bottom:96px;margin:0;max-width:none;display:grid;gap:12px;font:italic 400 28px/1.12 var(--ff-d);color:var(--sand);text-shadow:0 2px 18px rgba(0,0,0,.75)}
+.who .fig-quote em{color:var(--sage)}
+.who .fig-quote i{display:block;width:44px;height:1px;background:var(--sage)}
+.fig-mono{position:absolute;left:-14%;top:-20%;z-index:0;font:italic 400 clamp(220px,24vw,360px)/1 var(--ff-d);color:transparent;-webkit-text-stroke:1px rgba(163,177,138,.22);pointer-events:none;user-select:none}
+@media (max-width:899px){.fig-stage{width:100%;justify-self:stretch;padding:16px 0 30px 0}.fig-line{left:30px;right:-10px;top:0;bottom:16px}.fig-mono{font-size:160px;top:-14%;left:auto;right:-2%}.who .fig span{left:22px;right:auto;text-align:left}.who .fig span::before{left:-22px;right:auto;background:radial-gradient(ellipse at 0% 100%,rgba(7,9,10,.78) 0%,rgba(7,9,10,.45) 42%,rgba(7,9,10,0) 72%)}.who .fig-quote{position:relative;left:auto;bottom:auto;margin:20px 0 0 0;font-size:24px}.fig-stage{container-type:inline-size}.fig-line{bottom:auto;height:calc(62.5cqw + 16px)}}
+@media (prefers-reduced-motion:reduce){.who .fig img{animation:none}}
 .studio-head{display:grid;gap:26px;align-items:center}
 @media (min-width:900px){.studio-head{grid-template-columns:1fr 1fr;gap:56px 72px;align-items:start}.studio-head>div:nth-child(2){max-width:520px}.atua{grid-column:1}.selo{grid-column:2;max-width:520px}}
 .atua ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 24px;max-width:520px}
@@ -126,8 +142,8 @@
 .manif2.img .quote{text-shadow:0 10px 50px rgba(0,0,0,.6)}
 .manif.img .wrap{position:relative;z-index:1}
 /* frase 1: sombra suave atrás do texto para legibilidade sobre a foto clara */
-#frase1 .wrap::before{content:"";position:absolute;left:50%;top:50%;width:min(980px,96vw);height:min(600px,78vh);transform:translate(-50%,-50%);z-index:-1;pointer-events:none;background:radial-gradient(ellipse at center,rgba(10,12,10,.55) 0%,rgba(10,12,10,.38) 42%,rgba(10,12,10,0) 72%)}
-#frase1 .quote{text-shadow:0 2px 22px rgba(0,0,0,.45)}
+#frase1 .wrap::before,#frase2 .wrap::before{content:"";position:absolute;left:50%;top:50%;width:min(980px,96vw);height:min(600px,78vh);transform:translate(-50%,-50%);z-index:-1;pointer-events:none;background:radial-gradient(ellipse at center,rgba(10,12,10,.55) 0%,rgba(10,12,10,.38) 42%,rgba(10,12,10,0) 72%)}
+#frase1 .quote,#frase2 .quote{text-shadow:0 2px 22px rgba(0,0,0,.45)}
 
 .manif .grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:120px 120px;opacity:.25;mask-image:radial-gradient(60% 60% at 50% 50%,#000,transparent);-webkit-mask-image:radial-gradient(60% 60% at 50% 50%,#000,transparent)}
 .quote{font-family:var(--ff-d);font-weight:400;font-size:clamp(34px,4.6vw,70px);line-height:1.04;letter-spacing:-.01em;max-width:16ch;margin-inline:auto;color:#fff;position:relative}
@@ -253,12 +269,17 @@
 <section class="hz" id="sobre"><span id="estudio" class="anchor"></span>
   <div class="hz-sticky">
     <div class="hz-track" id="hzTrack">
-      <article class="panel p-fab"><div class="dim"></div>
+      <article class="panel p-fab"><div class="dim"></div><div class="bp"></div>
         <div class="wrap who">
           <div class="txt"><p class="k">Sobre</p><h2>Fabrício <em>Lira</em></h2>
             <p>Arquiteto e urbanista, mestre e doutor em Arquitetura e Urbanismo. Autor de mais de 400 projetos de arquitetura e desenho urbano. Há mais de duas décadas à frente do Estúdio2, coordena uma equipe de arquitetos e engenheiros especialistas em áreas diversas da arquitetura, engenharia e gestão de obras.</p>
             <div class="proof"><div><b>Doutor</b><span>em Arquitetura e Urbanismo</span></div><div><b>Quase 30</b><span>anos de arquitetura</span></div><div><b>400+</b><span>projetos de arquitetura e desenho urbano</span></div><div><b>+20</b><span>anos à frente do Estúdio2</span></div></div></div>
-          <figure class="fig"><img src="img/fabricio.webp" alt="Fabrício Lira" loading="lazy"><span>Fabrício Lira<br>Arquiteto e urbanista</span></figure>
+          <div class="fig-stage">
+            <span class="fig-mono" aria-hidden="true">e2</span>
+            <span class="fig-line" aria-hidden="true"></span>
+            <figure class="fig"><img src="img/fabricio.webp" alt="Fabrício Lira" loading="lazy"><span>Fabrício Lira<br>Arquiteto e urbanista</span></figure>
+            <p class="fig-quote"><i aria-hidden="true"></i><span>Construindo espaços,<br><em>conectando vidas.</em></span></p>
+          </div>
         </div>
       </article>
       <article class="panel p-est"><div class="dim"></div><div class="bp"></div>
@@ -432,7 +453,7 @@
   /* frase 1: palavras acendem */
   var quotes=$$(".quote").map(function(q){var em=(q.getAttribute("data-em")||"").split(" ");
     q.innerHTML=q.textContent.split(" ").map(function(w){var c=w.replace(/[.,]/g,"");return '<span class="w'+(em.indexOf(c)>-1?" em":"")+'">'+w+"</span>"}).join(" ");return {el:q,ws:$$(".w",q)}});
-  function updQ(){quotes.forEach(function(o){var r=o.el.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.8-r.top)/(r.height+innerHeight*.35)));o.ws.forEach(function(w,i){w.classList.toggle("on",i/o.ws.length<p)})})}
+  function updQ(){quotes.forEach(function(o){var r=(o.el.closest("section")||o.el).getBoundingClientRect(),start=innerHeight*.9,end=innerHeight/2-r.height/2,p=Math.min(1,Math.max(0,(start-r.top)/((start-end)*.94)));o.ws.forEach(function(w,i){w.classList.toggle("on",i/o.ws.length<p)})})}
   function updF1(){["frase1","frase2"].forEach(function(id){var sec=document.getElementById(id),im=$(".bg img",sec),r=sec.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var p=(innerHeight-r.top)/(innerHeight+r.height);im.style.transform="scale(1.12) translateY("+((p-.5)*-9)+"%)"})}
   /* parallax da foto do destaque */
   var carEl=$("#car"),camEls=$$("#car .cam");
