@@ -125,6 +125,9 @@
 .manif2.img{min-height:100svh;padding-bottom:12vh}
 .manif2.img .quote{text-shadow:0 10px 50px rgba(0,0,0,.6)}
 .manif.img .wrap{position:relative;z-index:1}
+/* frase 1: sombra suave atrás do texto para legibilidade sobre a foto clara */
+#frase1 .wrap::before{content:"";position:absolute;left:50%;top:50%;width:min(980px,96vw);height:min(600px,78vh);transform:translate(-50%,-50%);z-index:-1;pointer-events:none;background:radial-gradient(ellipse at center,rgba(10,12,10,.55) 0%,rgba(10,12,10,.38) 42%,rgba(10,12,10,0) 72%)}
+#frase1 .quote{text-shadow:0 2px 22px rgba(0,0,0,.45)}
 
 .manif .grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:120px 120px;opacity:.25;mask-image:radial-gradient(60% 60% at 50% 50%,#000,transparent);-webkit-mask-image:radial-gradient(60% 60% at 50% 50%,#000,transparent)}
 .quote{font-family:var(--ff-d);font-weight:400;font-size:clamp(34px,4.6vw,70px);line-height:1.04;letter-spacing:-.01em;max-width:16ch;margin-inline:auto;color:#fff;position:relative}
