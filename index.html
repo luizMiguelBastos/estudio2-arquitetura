@@ -47,7 +47,11 @@
 .hero .cue i{width:1px;height:46px;background:var(--line-2);position:relative;overflow:hidden}.hero .cue i::after{content:"";position:absolute;inset:0;background:var(--sage);transform:translateY(-100%);animation:cue 2.2s var(--ease-io) infinite}
 @keyframes cue{to{transform:translateY(100%)}}@keyframes fade{to{opacity:1}}@keyframes up{to{transform:none}}
 @media (min-width:900px){.hero .pic img{object-position:70% 55%}}
-@media (max-width:700px){.hero .veil{background:linear-gradient(180deg,rgba(10,12,10,.55),rgba(10,12,10,.2) 35%,rgba(10,12,10,.45) 60%,rgba(10,12,10,.97))}.hero .cue{display:none}}
+@media (max-width:700px){.hero .veil{background:linear-gradient(180deg,rgba(10,12,10,.55),rgba(10,12,10,.2) 35%,rgba(10,12,10,.45) 60%,rgba(10,12,10,.97))}.hero .cue{display:none}
+  /* celular: sombra suave atrás do texto (como nos manifestos) e assinatura menor */
+  .hero .wrap::before{content:"";position:absolute;left:-24%;right:-24%;top:6%;bottom:-4%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 42% 52%,rgba(10,12,10,.62) 0%,rgba(10,12,10,.42) 45%,rgba(10,12,10,0) 74%)}
+  .hero h1,.hero p{text-shadow:0 2px 22px rgba(0,0,0,.5)}
+  .hero .k{font-size:8.5px;letter-spacing:.26em}}
 /* ===== rail ===== */
 .rail{position:fixed;left:0;top:0;bottom:0;width:56px;z-index:45;pointer-events:none;display:none}
 @media (min-width:1100px){.rail{display:block}}
