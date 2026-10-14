@@ -235,7 +235,7 @@
 <main>
 <!-- HERO -->
 <section class="hero" id="topo">
-  <div class="pic"><canvas id="sky" aria-hidden="true"></canvas><picture><source media="(max-width:700px)" srcset="img/hero/interior-m.webp"><img id="heroFg" src="img/hero/interior.webp" alt="Sala de jantar integrada à cozinha, com iluminação quente" fetchpriority="high"></picture><div class="alt" id="heroAlt"></div><div class="dark" id="heroDark"></div></div>
+  <div class="pic"><canvas id="sky" aria-hidden="true"></canvas><picture><source media="(max-width:700px)" srcset="img/hero/agnus-m.webp"><img id="heroFg" src="img/hero/agnus.webp" alt="Casa Agnus ao anoitecer" fetchpriority="high"></picture><div class="alt" id="heroAlt"></div><div class="dark" id="heroDark"></div></div>
   <div class="veil"></div>
   <div class="wrap">
     <p class="k">Fabrício Lira · Natal, RN</p>
@@ -458,7 +458,7 @@
       ctx.globalCompositeOperation="source-over"}
     requestAnimationFrame(draw)})();
   /* hero: imagens alternando com escurecimento sutil */
-  (function(){if(RM)return;var alt=$("#heroAlt"),dark=$("#heroDark"),SRC=["img/hero/estrela","img/hero/vw"].map(function(u){return u+(matchMedia("(max-width:700px)").matches?"-m":"")+".webp"}),imgs=[],cur=-1;
+  (function(){if(RM)return;var alt=$("#heroAlt"),dark=$("#heroDark"),SRC=["img/hero/estrela","img/hero/interior"].map(function(u){return u+(matchMedia("(max-width:700px)").matches?"-m":"")+".webp"}),imgs=[],cur=-1;
     function start(){imgs=SRC.map(function(u){var im=document.createElement("img");im.src=u;im.alt="";im.draggable=false;alt.appendChild(im);return im});
       setInterval(function(){if(document.hidden||scrollY>innerHeight)return;var nx=cur+1;if(nx>=imgs.length)nx=-1;dark.classList.add("on");
         setTimeout(function(){imgs.forEach(function(im,i){im.classList.toggle("on",i===nx)});cur=nx},1000);setTimeout(function(){dark.classList.remove("on")},2400)},7000)}
