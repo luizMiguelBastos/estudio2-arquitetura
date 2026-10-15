@@ -19,7 +19,7 @@ import html, json, os, re, unicodedata, datetime
 SITE = "https://estudio2arquitetura.com.br"   # domínio definitivo, sem barra no final
 INSTAGRAM = "https://www.instagram.com/estudio2arquitetura/"
 TELEFONE = "+55-84-99413-4193"
-EMAIL = "contato@estudio2arquitetura.com.br"
+EMAIL = "estudio2arquitetura@gmail.com"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOJE = datetime.date.today().isoformat()
