@@ -843,17 +843,6 @@
       "placeholder": true,
       "texto": [],
       "slug": "casa-solis"
-    },
-    {
-      "id": "parnamirim",
-      "nome": "Parnamirim Cidade Sustentável",
-      "categoria": "urbano",
-      "cat_label": "Urbano",
-      "cidade": "Parnamirim, RN",
-      "ano": "2025",
-      "placeholder": true,
-      "texto": [],
-      "slug": "parnamirim-cidade-sustentavel"
     }
   ]
 }
