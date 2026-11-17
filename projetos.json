@@ -749,7 +749,7 @@
     },
     {
       "id": "closet",
-      "nome": "Quarto e Closet",
+      "nome": "Quarto + Closet",
       "categoria": "interiores",
       "cat_label": "Interiores",
       "cidade": "Parnamirim, RN",
@@ -774,7 +774,7 @@
         "img/closet/07",
         "img/closet/08"
       ],
-      "slug": "quarto-e-closet"
+      "slug": "quarto-closet"
     },
     {
       "id": "master",
