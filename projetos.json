@@ -671,6 +671,169 @@
       "slug": "casa-vitro"
     },
     {
+      "id": "hospedes",
+      "nome": "Quarto de Hóspedes",
+      "categoria": "interiores",
+      "cat_label": "Interiores",
+      "cidade": "Parnamirim, RN",
+      "ano": "2025",
+      "status": "Projeto",
+      "area": "13,70 m²",
+      "tipologia": "Interiores",
+      "resumo": "",
+      "texto": [
+        "O quarto de hóspedes foi pensado para oferecer conforto e acolhimento, criando uma atmosfera leve e sofisticada por meio de uma paleta predominantemente neutra, em tons de bege e areia. A composição combina diferentes texturas e materiais, com destaque para o revestimento da cabeceira e a marcenaria em tonalidade clara, que se integram de maneira harmônica ao ambiente.",
+        "A iluminação indireta valoriza as texturas e proporciona uma atmosfera mais aconchegante, enquanto os elementos decorativos e as obras de arte acrescentam personalidade ao espaço. O projeto também contempla uma bancada de apoio que funciona como espaço de trabalho ou estudos, além de armário e espelho de corpo inteiro, garantindo praticidade e funcionalidade para receber os hóspedes."
+      ],
+      "capa": "img/hospedes/01",
+      "fotos": [
+        "img/hospedes/01",
+        "img/hospedes/02",
+        "img/hospedes/03",
+        "img/hospedes/04",
+        "img/hospedes/05",
+        "img/hospedes/06",
+        "img/hospedes/07"
+      ],
+      "slug": "quarto-de-hospedes"
+    },
+    {
+      "id": "lavabo",
+      "nome": "Lavabo",
+      "categoria": "interiores",
+      "cat_label": "Interiores",
+      "cidade": "Parnamirim, RN",
+      "ano": "2025",
+      "status": "Projeto",
+      "area": "2,60 m²",
+      "tipologia": "Interiores",
+      "resumo": "",
+      "texto": [
+        "O lavabo foi concebido com uma proposta de forte personalidade, explorando o contraste entre a madeira em tonalidade escura e a textura rústica da pedra natural. A combinação dos materiais cria uma atmosfera acolhedora e sofisticada, com uma referência estética que valoriza elementos naturais e formas orgânicas.",
+        "O destaque fica para o espelho de desenho ovalado, que se integra à composição em pedra e reforça a identidade do ambiente. A bancada suspensa em tonalidade clara estabelece um contraponto à madeira, enquanto a iluminação pontual e indireta valoriza as texturas e os volumes. Os elementos decorativos complementam a proposta, trazendo um caráter mais artesanal e reforçando a sensação de aconchego."
+      ],
+      "capa": "img/lavabo/01",
+      "fotos": [
+        "img/lavabo/01",
+        "img/lavabo/02"
+      ],
+      "slug": "lavabo"
+    },
+    {
+      "id": "living",
+      "nome": "Living",
+      "categoria": "interiores",
+      "cat_label": "Interiores",
+      "cidade": "Parnamirim, RN",
+      "ano": "2025",
+      "status": "Projeto",
+      "area": "63,54 m²",
+      "tipologia": "Interiores",
+      "resumo": "",
+      "texto": [
+        "Este projeto de arquitetura de interiores destaca-se pela criação de um espaço de conceito aberto, contemporâneo e altamente sofisticado, onde as áreas de estar, jantar e cozinha gourmet se integram harmoniosamente. A amplitude do pé-direito duplo amplia a sensação de espaço, enquanto a luz natural e a iluminação artificial cuidadosamente planeada valorizam os detalhes arquitetónicos.",
+        "A materialidade do ambiente é marcada pelo contraste equilibrado entre o rústico e o moderno. Uma imponente parede revestida em pedra natural percorre a área social, trazendo textura e calor visual, sendo complementada pela elegância da marcenaria em madeira de tons quentes e pelas bancadas em pedra clara da cozinha.",
+        "A cozinha gourmet organiza-se em torno de uma ampla ilha central equipada com depuradores cilíndricos suspensos de estética industrial. A marcenaria sob medida integra uma torre quente funcional e espaços de arrumação discretos, aliando praticidade ao design. No centro da zona social, a mesa de jantar é emoldurada por pendentes de linhas puras, estabelecendo um ponto de transição natural entre a preparação de refeições e o convívio.",
+        "A circulação vertical é resolvida com uma escada suspensa de degraus em madeira e guarda-corpo em vidro, uma solução leve que preserva a transparência e a continuidade visual de todo o espaço. O projeto luminotécnico combina rasgos de iluminação indireta no teto, focos direcionados para a parede de pedra e peças pendentes de design, garantindo diferentes cenários de luz e uma atmosfera acolhedora."
+      ],
+      "capa": "img/living/01",
+      "fotos": [
+        "img/living/01",
+        "img/living/02",
+        "img/living/03",
+        "img/living/04",
+        "img/living/05",
+        "img/living/06"
+      ],
+      "slug": "living"
+    },
+    {
+      "id": "closet",
+      "nome": "Quarto e Closet",
+      "categoria": "interiores",
+      "cat_label": "Interiores",
+      "cidade": "Parnamirim, RN",
+      "ano": "2024",
+      "status": "Projeto",
+      "area": "19,15 m²",
+      "tipologia": "Interiores",
+      "resumo": "",
+      "texto": [
+        "Este projeto de quarto e closet aposta numa estética acolhedora, romântica e contemporânea, onde o conforto visual e a funcionalidade se unem através de uma paleta de cores harmoniosa e materiais nobres.",
+        "A zona de descanso é protagonizada por uma cama estofada de linhas suaves, emoldurada por uma cabeceira ripada branca de tom neutro que ganha destaque sobre o papel de parede de motivo floral suave. A prateleira superior em madeira serve de apoio decorativo, enquanto as mesas de cabeceira suspensas em tom rosa queimado adicionam um toque delicado e moderno. Nas paredes envolventes, o tom verde-oliva cria uma sensação de aconchego e conexão com a natureza, em perfeito equilíbrio com o piso em madeira. Frente à cama, um móvel baixo também em rosa queimado garante arrumação funcional sob a televisão.",
+        "O closet dá continuidade à linguagem visual do quarto, combinando uma marcenaria acolhedora em tom de madeira natural com detalhes de serralharia preta e iluminação LED embutida nas prateleiras. O fundo revestido com o mesmo papel de parede floral assegura a unidade estilística entre os dois ambientes, enquanto os nichos abertos, as gavetas e os varões organizam roupas e acessórios de forma prática e sofisticada."
+      ],
+      "capa": "img/closet/01",
+      "fotos": [
+        "img/closet/01",
+        "img/closet/02",
+        "img/closet/03",
+        "img/closet/04",
+        "img/closet/05",
+        "img/closet/06",
+        "img/closet/07",
+        "img/closet/08"
+      ],
+      "slug": "quarto-e-closet"
+    },
+    {
+      "id": "master",
+      "nome": "Quarto Master",
+      "categoria": "interiores",
+      "cat_label": "Interiores",
+      "cidade": "Parnamirim, RN",
+      "ano": "2025",
+      "status": "Projeto",
+      "area": "23,72 m²",
+      "tipologia": "Interiores",
+      "resumo": "",
+      "texto": [
+        "Este projeto de quarto propõe uma estética minimalista, calorosa e serena, orientada pela valorização dos materiais naturais e por um design de linhas puras.",
+        "A parede principal combina o painel de madeira de tom claro com uma cabeceira em pedra natural de veios marcados, criando uma base sofisticada para a cama estofada. A iluminação embutida no teto e as luminárias assinadas por Jader Almeida conferem uma luz suave e envolvente. No lado da zona de descanso, destaca-se um recanto de leitura com uma Poltrona Vivi, do designer Sergio Rodrigues, sobre um tapete circular, enquadrado por um painel em treliça de madeira (muxarabi) e prateleiras suspensas minimalistas.",
+        "Frente à cama, a parede integra um amplo painel de madeira com bancada suspensa e zona de escrivaninha revestida na mesma pedra natural da cabeceira, onde arandelas circulares duplas trazem um toque de elegância luminotécnica. O contraste sutil entre a madeira clara, a pedra natural e o tapete em tom verde traz frescura e equilíbrio, resultando num refúgio acolhedor e altamente sofisticado."
+      ],
+      "capa": "img/master/01",
+      "fotos": [
+        "img/master/01",
+        "img/master/02",
+        "img/master/03",
+        "img/master/04",
+        "img/master/05",
+        "img/master/06",
+        "img/master/07"
+      ],
+      "slug": "quarto-master"
+    },
+    {
+      "id": "cozinha",
+      "nome": "Cozinha",
+      "categoria": "interiores",
+      "cat_label": "Interiores",
+      "cidade": "Caicó, RN",
+      "ano": "2020",
+      "status": "Projeto",
+      "area": "18,76 m²",
+      "tipologia": "Interiores",
+      "resumo": "",
+      "texto": [
+        "Este projeto de cozinha destaca-se por um design vibrante e cheio de personalidade, combinando uma estética contemporânea com toques industriais e acolhedores.",
+        "O grande ponto focal do espaço é o contraste marcante entre o verde-petróleo dos armários inferiores e a madeira natural dos armários superiores, criando uma composição dinâmica e moderna. A parede de trabalho ganha relevo com um revestimento cerâmico de padrão geométrico hexagonal em tom terracota suave, que dialoga perfeitamente com a marcenaria e adiciona textura visual ao ambiente.",
+        "A ilha central combina uma bancada de trabalho em pedra clara com veios sutis e uma extensão de refeições em madeira, acompanhada por cadeiras de estrutura metálica preta. Sobre a ilha, a estrutura suspensa em serralharia preta com vegetação integrada e depurador cilíndrico acentua a inspiração industrial, enquanto a disposição dos eletros garante funcionalidade e organização ao espaço."
+      ],
+      "capa": "img/cozinha/01",
+      "fotos": [
+        "img/cozinha/01",
+        "img/cozinha/02",
+        "img/cozinha/03",
+        "img/cozinha/04",
+        "img/cozinha/05",
+        "img/cozinha/06",
+        "img/cozinha/07",
+        "img/cozinha/08"
+      ],
+      "slug": "cozinha"
+    },
+    {
       "id": "solis",
       "nome": "Casa Solis",
       "categoria": "casas",
